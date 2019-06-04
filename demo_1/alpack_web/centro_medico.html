@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<?PHP
+header('Acces-Control-Allow-Origin: http://186.67.178.3/ACLIN/getcustomer6.asp');
+?>
+    <html lang="es">
+
+    <head>
+        <title>ALPACK</title>
+
+
+        <script>
+            function buscar() {
+                limpiar2();
+                //alert("ok");
+                // Obtenemos el valor por el id
+
+                var str = "hemo";
+
+                //var str=document.getElementById("codigo").value;  //con este sacamos el valor del input
+
+
+                // document.getElementById("resultado").innerHTML=" \
+                //  <br>Respuesta: "+str; 
+                //
+
+                var xmlhttp;
+                if (str == "") {
+                    document.getElementById("resultado").innerHTML = "";
+                    return;
+                }
+                if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("resultado").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "http://186.67.178.3/ACLIN/getcustomer6.asp?q=" + str, true);
+                xmlhttp.send();
+                //
+
+            }
+        </script>
+
+
+
+        <script>
+            function limpiar() {
+
+                document.getElementById("resultado").innerHTML = "";
+
+            }
+        </script>
+
+
+
+        <script>
+            function buscar2() {
+                limpiar();
+                //alert("ok");
+                // Obtenemos el valor por el id
+                var str = document.getElementById("codigo2").value;
+
+
+                // document.getElementById("resultado").innerHTML=" \
+                //  <br>Respuesta: "+str; 
+                //
+                var xmlhttp;
+                if (str == "") {
+                    document.getElementById("resultado2").innerHTML = "";
+                    return;
+                }
+                if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("resultado2").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "http://186.67.178.3/ACLIN/getcustomer5.asp?q=" + str, true);
+                xmlhttp.send();
+                //
+
+            }
+        </script>
+
+
+
+
+
+
+
+        <script>
+            function limpiar() {
+
+                document.getElementById("resultado").innerHTML = "";
+
+            }
+        </script>
+
+
+        <script>
+            function limpiar2() {
+
+                document.getElementById("resultado2").innerHTML = "";
+
+            }
+        </script>
+
+
+
+
+        <script>
+            function envio_1() {
+
+                window.location = ("examenes.html?var=1");
+                //document.getElementById("service4").click(); //genial enviar un click al ID service4
+
+                //setTimeout(function(){ window.location = ("examenes.html");  }, 1000);
+
+                //setTimeout(function(){ document.getElementById("service4").click(); }, 2500);
+
+            }
+        </script>
+
+
+
+        <script>
+            function examenes() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+        <script>
+            function sucursales() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+        <script>
+            function centro_medico() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                    document.getElementById("service1").style.display = "block";
+                    document.getElementById("resultado1").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                    document.getElementById("service2").style.display = "block";
+                    document.getElementById("resultado2").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                    document.getElementById("service3").style.display = "block";
+                    document.getElementById("resultado3").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                    document.getElementById("service4").style.display = "block";
+                    document.getElementById("resultado4").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                    document.getElementById("service5").style.display = "block";
+                    document.getElementById("resultado5").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                    document.getElementById("service6").style.display = "block";
+                    document.getElementById("resultado6").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                    document.getElementById("service7").style.display = "block";
+                    document.getElementById("resultado7").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                    document.getElementById("service8").style.display = "block";
+                    document.getElementById("resultado8").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                    document.getElementById("service9").style.display = "block";
+                    document.getElementById("resultado9").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                    document.getElementById("service10").style.display = "block";
+                    document.getElementById("resultado10").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                    document.getElementById("service11").style.display = "block";
+                    document.getElementById("resultado11").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                    document.getElementById("service12").style.display = "block";
+                    document.getElementById("resultado12").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                    document.getElementById("service13").style.display = "block";
+                    document.getElementById("resultado13").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 14) {
+                    document.getElementById("service14").click();
+                    document.getElementById("service14").style.display = "block";
+                    document.getElementById("resultado14").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 15) {
+                    document.getElementById("service15").click();
+                    document.getElementById("service15").style.display = "block";
+                    document.getElementById("resultado15").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 16) {
+                    document.getElementById("service16").click();
+                    document.getElementById("service16").style.display = "block";
+                    document.getElementById("resultado16").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 17) {
+                    document.getElementById("service17").click();
+                    document.getElementById("service17").style.display = "block";
+                    document.getElementById("resultado17").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 18) {
+                    document.getElementById("service18").click();
+                    document.getElementById("service18").style.display = "block";
+                    document.getElementById("resultado18").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 19) {
+                    document.getElementById("service19").click();
+                    document.getElementById("service19").style.display = "block";
+                    document.getElementById("resultado19").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 20) {
+                    document.getElementById("service20").click();
+                    document.getElementById("service20").style.display = "block";
+                    document.getElementById("resultado20").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 21) {
+                    document.getElementById("service21").click();
+                    document.getElementById("service21").style.display = "block";
+                    document.getElementById("resultado21").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 22) {
+                    document.getElementById("service22").click();
+                    document.getElementById("service22").style.display = "block";
+                    document.getElementById("resultado22").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 23) {
+                    document.getElementById("service23").click();
+                    document.getElementById("service23").style.display = "block";
+                    document.getElementById("resultado23").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 24) {
+                    document.getElementById("service24").click();
+                    document.getElementById("service24").style.display = "block";
+                    document.getElementById("resultado24").style.display = "block";
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+
+        <script language="javascript">
+            function crearframe() {
+                var testframe = document.createElement("iframe");
+                testframe.id = "testframe";
+                testframe.src = "http://186.67.178.3/ACLIN/getcustomer5.asp?q=hemo";
+                document.body.appendChild(testframe);
+            }
+        </script>
+
+        <style>
+            .ocultar {
+                display: none;
+            }
+            
+            .mostrar {
+                display: block;
+            }
+        </style>
+
+
+
+
+
+
+
+
+        <!-- metas -->
+        <meta charset="utf-8">
+        <meta name="author" content="ALPACK">
+        <meta name="keywords" content="Centro Médico, Laboratorio Clínico, Frilab">
+        <meta name="description" content="ALPACK">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <!--/ metas -->
+
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+        <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos_aclin.css">
+        <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+        <link rel="shortcut icon" href="img/favicon.png" />
+
+        <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+
+        <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+
+
+
+        <script type="text/javascript" src="js/menu.js"></script>
+
+
+
+
+    </head>
+
+    <body onload="centro_medico()">
+
+        <div id="menu" class="page-header main-page sticky"></div>
+        <script>
+            cargar_menu();
+            document.getElementById("menu").innerHTML = localStorage.menu;
+        </script>
+
+
+
+
+
+
+        <!-- quick search 
+			<form id="quick-search" class="quick-search">
+				<fieldset>
+					<legend>Búsqueda:</legend>
+					
+					<input type="text" placeholder="Búsqueda por nombre" id="docname" name="docname" class="ui-autocomplete-input" autocomplete="off">
+					
+					<select>
+						<option value="0">Especialidad</option>
+						<option value="1"> Anestesia </option>
+<option value="2"> Cardiología </option>
+<option value="3"> Cirugía </option>
+<option value="4"> Cirugía Pediátrica </option>
+
+<option value="6"> Diagnóstico por Imágenes </option>
+<option value="7"> Educacion Superior </option>
+<option value="8"> Enfermería </option>
+<option value="9"> Gastroenterología </option>
+<option value="10"> Ginecología Y Obstetricia </option>
+<option value="11"> Infectología </option>
+<option value="12"> Kinesiología </option>
+<option value="13"> Laboratorio Clínico </option>
+<option value="14"> Medicina Legal </option>
+<option value="15"> Medico Clínico </option>
+<option value="16"> Medico Familia </option>
+<option value="17"> Medico Laboral </option>
+<option value="18"> Nefrología </option>
+<option value="19"> Neurociencia </option>
+<option value="20"> Nutrición </option>
+<option value="21"> Odontología </option>
+<option value="22"> Oftalmología </option>
+<option value="23"> Oncología Clínica </option>
+<option value="24"> Ortesis y Prótesis </option>
+<option value="25"> Pediatría </option>
+<option value="26"> Radiología </option>
+<option value="27"> Reumatología </option>
+<option value="28"> Terapia Intensiva </option>
+<option value="29"> Trabajo Social </option>
+<option value="30"> Traumatología </option>
+<option value="31"> Urología </option>
+
+					</select>
+					
+					<select>
+						<option value="0">Consultorio</option>
+						<option value="1">Central</option>
+						<option value="2">Sede 1</option>
+						<option value="3">Sede 2</option>
+						
+					</select>
+					
+					<button type="submit">Buscar</button>
+					<div class="switcher">
+						<button id="quick-search-switcher" type="button">Mi Médico</button>
+					</div>
+				</fieldset>				
+			</form>
+			<!--/ quick search -->
+        <!--/ HEADERS -->
+
+        <!-- page title -->
+        <section class="page-title">
+            <div class="grid-row clearfix">
+                <h1>Centro Médico</h1>
+                <br>
+                <h3> :::: Especialidades</h3>
+            </div>
+        </section>
+        <!--/ page title -->
+
+
+
+
+
+
+
+        <!-- FOOTERS -->
+        <!-- page footer 
+			<footer class="page-footer">
+				<a href="#" id="top-link" class="top-link"><i class="fa fa-angle-double-up"></i></a>
+				
+				<div class="grid-row">
+					<div class="grid-col grid-col-3">
+						<!-- last news 
+						<section class="widget-alt last-news">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Clinico</div>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin justo non odio molestie, sed venenatis elit, consectetur adipiscing.</li>
+								<li>Donec quis condimentum leo, et congue dolor. Integer auctor facilisis odio. Duis vitae nibh tristique, consectetur lacus a, facilisis rutrum enim.</li>
+								<li>Cras fermentum interdum dapibus. Maecenas imperdiet, consectetur adipiscing magna nec odio cursus, vitae consequat ante.</li>
+							</ul>
+						</section>
+						<!--/ last news 
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- location
+						<section class="widget-alt location">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Ubicación</div>
+							<address>Dirección 1234 - Copiapó - 1530000, Chile</address>
+							<ul>
+								<li><i class="fa fa-phone"></i>(+56) 52 9 47677800</li>
+								<li><i class="fa fa-at">@</i>info@saludcadelaria.com</li>
+								<li><i class="fa fa-skype"></i>La Candelaria Salud</li>
+							</ul>
+							<nav>
+								
+								<a href="#" class="fa fa-facebook"></a>
+								
+							</nav>
+						</section>
+						<!--/ location 	
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- last news 
+						<section class="widget-alt recent-posts">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Recent Posts</div>
+							<ul>
+								<li>
+									<a href="#"><img src="pic/post/1.png" width="80" height="80" alt=""></a>
+									<p><a href="#">New study links lutein with eye health benefits, consectetur adipiscing</a><br>5 months ago</p>
+								</li>
+								<li>
+									<a href="#"><img src="pic/post/2.png" width="80" height="80" alt=""></a>
+									<p><a href="#">Pets may reduce risk of heart disease, et congue dolor heart</a><br>8 months ago</p>
+								</li>
+								<li>
+									<a href="#"><img src="pic/post/3.png" width="80" height="80" alt=""></a>
+									<p><a href="#">Discoveries offer a new explanation for diabetes, consectetur</a><br>10 months ago</p>
+								</li>
+							</ul>
+						</section>
+						<!--/ last news					
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- work time
+						<section class="widget-alt work-time">
+							<div class="widget-icon"></div>
+							<dl>
+								<dt>Lun</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Mar</dt>
+								<dd>01:00 am - 7:00 pm</dd>
+								<dt>Mié</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Jue</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Vie</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Sáb</dt>
+								<dd>08:00 am - 5:00 pm</dd>
+								<dt>Dom</dt>
+								<dd>08:00 am - 5:00 pm</dd>
+							</dl>
+							<a href="contacto.html" class="button">Consulte ahora</a>
+						</section>
+						<!--/ work time 						
+					</div>
+				</div>
+			</footer>
+			<!--/ page footer -->
+
+
+
+
+
+
+
+        <main class="page-content">
+            <div class="grid-row">
+                <div class="grid-col grid-col-9">
+                    <section class="detailed-services wpb_content_element">
+                        <div class="widget-title"> Especialidades</div>
+
+
+
+                        <dl>
+
+
+
+
+                            <dt id="service1" class="ocultar"><i class="fa fa-check"></i>Medicina General</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado1" class="testimonial_2 ocultar">
+
+                                            <td>
+                                                <h36>Dr. Pablo Torres Ortiz - Médico General y tratamiento Obesidad</h36>
+                                                <ul>
+                                                    <li>Horario: Lunes a Viernes Variable - Sábado 9:00 a a 13:00</li>
+                                                </ul>
+                                                <p>Atención con:</p>
+                                                <ul>
+                                                    <li>Fonasa</li>
+                                                    <li>Particulares</li>
+                                                </ul>
+
+
+
+
+
+
+                                                <p>&nbsp;</p>
+                                                <h36>Dr. Jorge Ramírez Kitchin</h36>
+                                                <ul>
+                                                    <li>Horario: Lunes a Sábado 17:00 a 20:00</li>
+                                                </ul>
+                                                <p>Atención con:</p>
+                                                <ul>
+                                                    <li>Particular</li>
+                                                </ul>
+
+
+
+
+                                                <p>&nbsp;</p>
+                                                <h36>Dr. Agustín Montano Sánchez</h36>
+                                                <ul>
+                                                    <li>Horario: Lunes a Sábado 17:00 a 20:00</li>
+                                                    <li>Atención con:</li>
+                                                    <li>Particulares</li>
+                                                    <br>
+                                                </ul>
+
+
+                                                <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
+                                                <ul>
+                                                </ul>
+
+                                            </td>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service2" class="ocultar"><i class="fa fa-check"></i>Nutrición</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado2" class="testimonial_2 ocultar">
+
+                                            <h36>Sra. María Paz Valenzuela Santibáñez</h36><br>
+
+                                            <p>Horario: Lunes a Sábado 17:00 a 20:00</p><br>
+                                            <p>Convenio:</p>
+                                            <p>Particulares</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service3" class="ocultar"><i class="fa fa-check"></i>Psicología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado3" class="testimonial_2 ocultar">
+
+                                            <h36>Sra. Claudia Coloma Calderón</h36>
+                                            <p>Horarios: Lunes a Sábado 17:00 a 20:00 Variable</p>
+                                            <p>Atención:</p>
+                                            <p>Particulares</p><br>
+
+                                            <p>&nbsp;</p>
+                                            <h36>Sra. Jacqueline Pérez Moreno</h36>
+                                            <ul>
+                                                <li>Horario: Lunes a Sábado 17:00 a 20:00 Variable</li>
+                                                <li>Atención con:</li>
+                                                <li>Particulares</li>
+                                                <br>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                            </dd>
+
+
+                            <dt id="service4" class="ocultar"><i class="fa fa-check"></i>Matrona</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado4" class="testimonial_2 ocultar">
+
+                                            <h36>Sra. Gabriela Rivera</h36>
+                                            <ul>
+                                                <li>Horario: Lunes a Sábado 17:00 a 20:00 Variable</li>
+                                                <li>Atención con:</li>
+                                                <li>Particulares</li>
+                                                <br>
+                                            </ul>
+                                            <br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service5" class="ocultar"><i class="fa fa-check"></i>Otorrinolaringologo</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado5" class="testimonial_2 ocultar">
+
+
+                                            <h36>Dr. Ivan Campos Alatmirano - Otorrinolaringólogo</h36><br>
+
+                                            <p>Horarios: Lunes y Miércoles (14:15 a 16:30)</p><br>
+                                            <p>Atención con:</p><br>
+
+                                            <p>Fonasa</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Consalud</p>
+                                            <p>Banmedica</p>
+                                            <p>Particulares</p>
+                                            <p>Fundación</p><br>
+                                            <p>Procedimiento especiales : Nasofibroscopías</p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service6" class="ocultar"><i class="fa fa-check"></i>Cirugía</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado6" class="testimonial_2 ocultar">
+
+                                            <h36>Dr. Claudio Cifuentes Vargas - Cirujano general</h36><br>
+
+                                            <p>Horario: Miércoles (18:00 a 19:00)</p><br>
+                                            <p>Atención con:</p><br>
+                                            <p>Masvida</p>
+                                            <p>Consalud</p>
+                                            <p>Banmedica</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Particulares </p><br><br>
+
+                                            <h36>Dra. Arhiyuri Linares - Cirujano general</h36><br>
+
+                                            <p>Horario: Miércoles (18:00 a 19:00)</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares </p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service7" class="ocultar"><i class="fa fa-check"></i>Traumatología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado7" class="testimonial_2 ocultar">
+
+
+                                            <h36>Dr. Daniel Arocha González</h36><br>
+
+                                            <p>Horario: Martes y Jueves</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares </p><br>
+
+
+                                            <h36>Dr. Heriberto Aguilera Alvarez</h36><br>
+
+                                            <p>Horario: Lunes y Miércoles</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares </p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+                            <dt id="service8" class="ocultar"><i class="fa fa-check"></i>Control de Niño Sano</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado8" class="testimonial_2 ocultar">
+
+                                            <h36>Rosalía Muñoz Bahamonde – Enfermera</h36><br>
+
+                                            <p>Horario: Lunes a viernes (18:00 a 20:00) </p><br>
+                                            <p>Atención con:</p><br>
+
+                                            <p>Banmédica</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Consalud</p>
+                                            <p>Más Vida</p>
+                                            <p>Particulares</p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service9" class="ocultar"><i class="fa fa-check"></i>Matrona Control Embarazo</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado9" class="testimonial_2 ocultar">
+
+                                            <h36>Angélica Avila Ravanal - Matrona</h36><br>
+
+                                            <p>Control de embarazo y papanicolau</p><br>
+                                            <p>Horario: Lunes a viernes (17:00 a 20:00) o (16:00 a 18:20)</p><br>
+                                            <p>Atención:</p><br>
+
+                                            <p>Banmedica</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Consalud</p>
+                                            <p>Mas Vida</p>
+                                            <p>Armada</p>
+                                            <p>Particulares</p>
+
+
+                                            <h36>Carolina Calderón Téllez - Matrona</h36><br>
+
+                                            <p>Control de embarazo, Papanicolau, inserción y/o extracción de Implanon</p><br>
+                                            <p>Horario: Martes y Jueves 17:00 Hrs. a 19:30 Hrs.</p><br>
+                                            <p>Atención con:</p><br>
+                                            <p>Particulares</p><br>
+
+
+                                            <h36>Macarena Schroder Moraga - Matrona</h36><br>
+
+                                            <p>Control de embarazo y papanicolau</p><br>
+                                            <p>Horario: Lunes y Martes (17:30 a 20:00)</p><br>
+                                            <p>Atención con:</p><br>
+                                            <p>Particulares</p><br>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+                            <dt id="service10" class="ocultar"><i class="fa fa-check"></i>Vacunatorio</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado10" class="testimonial_2 ocultar">
+
+
+                                            <b>Vacunatorio privado autorizado con Resolución Sanitaria para su funcionamiento en Chiloé.</b><br>
+
+                                            <b>Cuenta con todas las vacunas obligatorias del Programa Ampliado de Inmunizaciones ( P.A.I.) Infantiles.</b><br> <br>
+
+                                            <b>También posee vacunas extraprogramáticas:</b><br>
+
+                                            <p>Neumococo de adulto y niño.</p>
+                                            <p>Varicela</p>
+                                            <p>Rotavirus</p>
+                                            <p>Hepatitis A y B (Combinados)</p>
+                                            <p>Hepatitis A</p>
+                                            <p>Hepatitis B para adultos</p>
+                                            <p>Anti gripal</p>
+                                            <p>Vac. Cervarix (Prevencion Cancer de Utero)</p>
+
+
+                                            <p>Además posee Vacunatorio Internacional con la vacuna obligatoria para la Fiebre Amarilla y otras.</p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+                            <dt id="service11" class="ocultar"><i class="fa fa-check"></i>Kinesiología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado11" class="testimonial_2 ocultar">
+
+
+
+
+
+                                            <h36>Jaime Márquez Ruiz - Kinesiólogo (adultos y niños)</h36><br>
+
+                                            <p>Horario: Lunes a Viernes mañana (9:00 a 13:00)</p><br>
+                                            <p>Atención con:</p>
+                                            <p>Fonasa</p>
+                                            <p>Banmedica</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Masvida</p>
+                                            <p>Consalud</p>
+                                            <p>Vida Tres</p>
+                                            <p>Particulares</p><br>
+
+
+                                            <br>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+                            <dt id="service12" class="ocultar"><i class="fa fa-check"></i>Psicología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado12" class="testimonial_2 ocultar">
+
+
+                                            <h36>Karen Vera Monje - Psicóloga</h36><br>
+
+                                            <p>Horario: Lunes y jueves (17:30 a 19:00)</p><br>
+                                            <b>Atención con:</b>
+                                            <p>Mas vida</p>
+                                            <p>Cruz Blanca</p>
+                                            <p>Fonasa</p>
+                                            <p>Particulares</p><br>
+
+
+                                            <h36>Carolina De La Parra - Psicóloga</h36><br>
+
+                                            <p>Horario: Lunes, Martes, jueves y Viernes (17:30 a 19:30)</p><br>
+                                            <b>Atención con:</b>
+                                            <p>Cruz blanca</p>
+                                            <p>Mas Vida</p>
+                                            <p>Fonasa</p>
+                                            <p>Banmedica</p>
+                                            <p>Particulares</p><br>
+
+
+                                            <h36>Ramón Zamora Sierra - Psicólogo</h36><br>
+
+                                            <p>Horario: lunes a viernes (15:30 a 18:00)</p><br>
+                                            <b>Atención con:</b>
+                                            <p>Banmedica</p>
+                                            <p>Particulares</p><br>
+
+
+
+                                            <h36>Moisés López Kappes - Psicólogo</h36><br>
+
+                                            <p>Horario: Jueves Viernes y Sábado</p><br>
+                                            <b>Convenio:</b>
+                                            <p>Particulares</p><br>
+
+
+
+                                            <h36>Lucía Rojas - Psicólogo</h36><br>
+
+                                            <p>Horario: Lunes a Viernes (10:00 Hrs. a 13:00 Hrs.)</p><br>
+                                            <b>Atención con:</b>
+                                            <p>Fonasa</p>
+                                            <p>Particulares</p><br>
+
+                                            <h36>Gonzalo Contreras Soto - Psicólogo</h36><br>
+
+                                            <p>Horario: Lunes a Viernes</p><br>
+                                            <b>Convenio:</b>
+                                            <p>Particulares</p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service13" class="ocultar"><i class="fa fa-check"></i>Nutricionista</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado13" class="testimonial_2 ocultar">
+
+
+                                            <h36>Jocelyn Nenen Ule</h36><br>
+
+                                            <p>Horario: Martes y Jueves (08:30 a 12:00)</p><br>
+                                            <p>Atención:</p><br>
+                                            <p>Particulares</p><br>
+
+                                            <h36>Luis Cisternas</h36><br>
+
+                                            <p>Horario: Viernes de 18:00 a 20:00 hrs.</p><br>
+                                            <p>Sábado de 10:00 a 12:00 hrs</p><br>
+                                            <p>Atención:</p><br>
+                                            <p>Particulares</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </dd>
+
+
+
+
+
+                            <dt id="service14" class="ocultar"><i class="fa fa-check"></i>Fonoaudiología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado14" class="testimonial_2 ocultar">
+
+                                            <h36>Karen Bichon Droguett</h36><br>
+
+                                            <p>Audiometrías</p><br>
+                                            <p>Horario:</p>
+                                            <p>Lunes (14:30 a 17:00)</p>
+                                            <p>Viernes (09:00 a 12:30)</p>
+                                            <br>
+                                            <p>Convenio:</p>
+                                            <p>Particulares</p>
+                                            <br>
+                                            <b>Asesora - Consultora en lactancia materna EDULACTA.</b>
+                                            <p>Audiometrías:</p>
+                                            <p>Evaluación, diagnóstico y terapia del lenguaje , voz, deglución, audición. Niños-as, Adultos-as. </p>
+                                            <p>Asesoría en lactancia materna y alimentación complementaria método BLW. </p>
+                                            <p>Asesoría  en estimulación temprana, apego seguro y crianza respetuosa.</p>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service15" class="ocultar"><i class="fa fa-check"></i>Podología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado15" class="testimonial_2 ocultar">
+
+                                            <h36>Nicol Torres Vargas</h36><br>
+
+                                            <p>Horario: Sábado (10:00 a 12:00)</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+
+                            <dt id="service16" class="ocultar"><i class="fa fa-check"></i>Dermatología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado16" class="testimonial_2 ocultar">
+
+                                            <h36>Dra. Marina Pereira Rancati</h36><br>
+
+                                            <p>Horario: Sábado (10:00 a 12:00)</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+                            <dt id="service17" class="ocultar"><i class="fa fa-check"></i>Cirugía Vascular</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado17" class="testimonial_2 ocultar">
+
+                                            <h36>Dr. Oscar Beteta F.</h36>
+                                            <ul>
+                                                <li>Horario: Lunes y Miércoles de 17:00 hrs. a 18:00 hrs.</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <p>&nbsp;</p>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service18" class="ocultar"><i class="fa fa-check"></i>Cardiología</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado18" class="testimonial_2 ocultar">
+
+                                            <h36>Dra. Eugenia del Valle</h36><br>
+
+                                            <p>Horario: Miércoles de 17:15 hrs a 20:00 hrs</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares</p><br>
+
+                                            <h36>Dr. Oscar Donquis Macho</h36><br>
+
+                                            <p>Horario: Miércoles de 17:00 hrs a 20:00 hrs</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares</p><br>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service19" class="ocultar"><i class="fa fa-check"></i>Quiropráctico</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado19" class="testimonial_2 ocultar">
+
+                                            <h36>Kinesiólogo Jerardo Lahnembach</h36><br>
+
+                                            <p>Horario: Miércoles de 15:00 hrs a 20:00 hrs</p><br>
+                                            <p>Convenio:</p><br>
+                                            <p>Particulares</p><br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service20" class="ocultar"><i class="fa fa-check"></i>Fisiatría</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado20" class="testimonial_2 ocultar">
+
+                                            <h36>Dra. Alejandra Guerrero F.</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Adultos y Niños</li>
+                                                <li>Horario: Lunes a Viernes de 10:00 - 12:00 hrs y 14:15 - 17:00 hrs</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+                            <dt id="service21" class="ocultar"><i class="fa fa-check"></i>Anestesia y Policlínico del Dolor</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado21" class="testimonial_2 ocultar">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+                            <dt id="service22" class="ocultar"><i class="fa fa-check"></i>Pediatría</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado22" class="testimonial_2 ocultar">
+
+
+                                            <h36>Dra. Mariana Montiel</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Horario: Martes y Jueves 17:00 hrs. - 20:00 hrs.</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+                                            <h36>Dr. Andres Rojas Ortiz</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Horario: Lunes y Miércoles 17:30 Hrs. a 20:00 Hrs.</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service23" class="ocultar"><i class="fa fa-check"></i>Depilación Laser</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado23" class="testimonial_2 ocultar">
+
+                                            <h36>Kinesiologa Camila Muñoz</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Horario: Consultar disponibilidad de horas</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+                            <dt id="service24" class="ocultar"><i class="fa fa-check"></i>Medicina Interna</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado24" class="testimonial_2 ocultar">
+
+                                            <h36>Dr. Gaspar Arriagada González</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Horario: Jueves de 17:30 a 20:00 Hrs.</li>
+                                                <li>Convenio: Fonasa</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+                                            <h36>Dr. Jair Agelvis Manrique</h36><br>
+                                            <br>
+                                            <ul>
+                                                <li>Horario: Lunes y Miércoles</li>
+                                                <li>Convenio:</li>
+                                                <li>Particulares</li>
+                                            </ul>
+                                            <br>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+
+                        </dl>
+
+                        </div>
+
+
+
+                        <!-- appointment -->
+                        <div class="grid-col grid-col-3">
+                            <!-- appointment -->
+
+
+
+                            <section class="detailed-services wpb_content_element">
+                                <div class="widget-title"> Búsqueda General</div>
+
+                                <form align="center" id="form2">
+                                    <h1>Ingrese Código o Nombre del Exámen
+                                        <h1>
+
+
+
+                                            <div align="center">
+                                                <table style="width:100%">
+                                                    <tr>
+                                                        <td><input class="contenido_input" type="search" placeholder="Buscar" name="codigo2" value="" id="codigo2" onchange="buscar_indicaciones()" style="width:170px"></td>
+                                                        <td><a class="button" onclick="buscar_indicaciones()">Buscar</a></td>
+
+
+                                                        <!--<br>
+			 <input class="btn_verde" type="button" value="Buscar" onclick="buscar3()">
+			 <br>
+					  <input name="bt_limpiar" type="reset" class="btn" value="Limpiar" onclick="limpiar2()">
+					  <br>-->
+                                                        <!--<div class="recuadro_respuesta" id="resultado2"></div>  -->
+
+                                                    </tr>
+                                                </table>
+
+                                                <br>
+
+                                            </div>
+
+
+
+                                </form>
+
+
+                                <table style="display:none;" id="tabla_4" border="1" cellpadding="10" class="contenido_tabla_examenes table-responsive" style="display:table;">
+                                    <thead>
+                                        <tr>
+                                            <th style="background-color:#008edc;color:white;padding:3px;">Código</th>
+                                            <th style="background-color:#008edc;color:white;padding:3px;">Descripción</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="respuesta_final" align="justify">
+                                    </tbody>
+
+                                </table>
+                                <div id="respuesta_pie"></div>
+
+                            </section>
+
+                        </div>
+
+
+
+                </div>
+
+
+            </div>
+
+        </main>
+
+
+
+
+
+
+
+
+        <div id="pie_de_pagina"></div>
+
+
+        <script>
+            cargar_pie();
+
+            document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+        </script>
+
+
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+        <script type="text/javascript" src="js/greensock.js"></script>
+        <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+        <!-- Superscrollorama -->
+        <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+        <!--/ Superscrollorama -->
+
+        <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <!-- EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+        <!--/ EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+
+        <!--/ scripts -->
+
+        <!-- tuner -->
+        <script src="tuner/js/scripts.js"></script>
+
+        <div id="tuner" class="tuner"></div>
+        <!--/ tuner -->
+
+        <script>
+            cargar_horario();
+
+            document.getElementById("tuner").innerHTML = localStorage.horario;
+        </script>
+
+
+
+
+
+
+
+
+    </body>
+
+    </html>

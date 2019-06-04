@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<?PHP
+header('Acces-Control-Allow-Origin: *');
+?>
+    <html>
+
+    <head>
+        <title>ALPACK</title>
+
+        <!-- metas -->
+        <meta charset="utf-8">
+        <meta name="author" content="ALPACK">
+        <meta name="keywords" content="Centro Médico, Laboratorio Clínico, Frilab">
+        <meta name="description" content="ALPACK::">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <!--/ metas -->
+
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+        <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+        <link rel="shortcut icon" href="img/favicon.png" />
+
+        <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+        <!--/ styles -->
+
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+
+        <script>
+            function examenes() {
+                var x = 'var'; //creamos un variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+        <script>
+            function sucursales() {
+                var x = 'var'; //creamos un variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                } //genial enviar un click al ID service
+
+            }
+        </script>
+
+        <script>
+            function prehide() {
+                if (document.getElementById) {
+                    document.getElementById('preload').style.visibility = 'hidden'
+                }
+            }
+
+            function preshow() {
+                if (document.getElementById) {
+                    document.getElementById('preload').style.visibility = 'visible'
+                }
+            }
+        </script>
+
+        <script>
+            function espere() {
+                //setTimeout(function(){ alert("Un momentito..."); }, 3000);
+                alert("Un momentito...");
+            }
+        </script>
+
+
+        <script type="text/javascript" src="js/menu.js"></script>
+
+
+
+    </head>
+
+    <body onload="sucursales()">
+
+
+        <div id="menu" class="page-header main-page sticky"></div>
+
+
+        <script>
+            cargar_menu();
+            document.getElementById("menu").innerHTML = localStorage.menu;
+        </script>
+
+
+        <!-- page title -->
+        <section class="page-title">
+            <div class="grid-row clearfix">
+                <h1>Ubicación</h1><br>
+                <h3> :::: Información, Teléfonos, Horarios, Dirección etc.</h3>
+
+                <nav class="bread-crumbs">
+                    <a href="index.html">Ubicación</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+                    <a href="#">Dirección</a>
+                </nav>
+            </div>
+        </section>
+        <!--/ page title -->
+
+        <main class="page-content">
+            <div class="grid-row">
+                <div class="grid-col grid-col-6">
+                    <section class="detailed-services wpb_content_element">
+                        <div class="widget-title"> ¿Dónde Estámos?</div>
+                        <dl>
+
+
+                            <dt id="service1"><i class="fa fa-check"></i>ALPACK</dt>
+                            <dd>
+                                <div class="details">
+                                    <div class="clearfix">
+                                        <img src="img/servicios/casa_matriz.jpg" width="185" height="110" alt="">
+
+
+                                        <ul>
+                                            <li>Dirección</li>
+                                            <li>Manuel Montt Nº 480</li>
+                                            <li>VI - Región</li>
+                                            <li>Chile</li>
+                                        </ul>
+
+                                        <ul>
+                                            <li>Teléfono</li>
+                                            <li>+56-9 7987 7986</li>
+
+                                        </ul>
+
+
+
+                                        <ul>
+                                            <li><b>HORARIO ALPACK</b></li>
+                                            <li><b>Lunes a Viernes</b></li>
+                                            <li>Mañana</li>
+                                            <li>09:00 a 13:00 Hrs.</li>
+                                            <li>Tarde</li>
+                                            <li>14:00 a 19:00 Hrs.</li>
+                                            <li><b>Sábado</b></li>
+                                            <li>09:00 a 13:00 Hrs.</li>
+                                        </ul>
+
+
+
+
+
+
+                                    </div>
+                                </div>
+                                <div class="row maps">
+                                    <!--aqui agregamos la clase maps que permite anular el zoom-->
+
+
+                                    <div class="col">
+                                        <ul>
+
+
+                                            <a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección </a></li>
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2141.3071136015888!2d-72.32876196070616!3d-39.6426775883127!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96141588a72d82a5%3A0x32d228eb51162df7!2sBernardo+O&#39;higgins%2C+Regi%C3%B3n+de+Los+R%C3%ADos%2C+Chile+357%2C+Panguipulli%2C+Regi%C3%B3n+de+los+R%C3%ADos!5e0!3m2!1ses!2scl!4v1540474807339"
+                                                width="470" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                        </ul>
+                                    </div>
+                                    <!--
+										-->
+                                </div>
+                            </dd>
+
+
+
+
+
+
+
+                        </dl>
+                    </section>
+
+                </div>
+
+
+
+
+
+                <div class="grid-col grid-col-6">
+                    <!-- contacts -->
+
+                    <dl>
+                        <dt class="opened">ALPACK</dt>
+
+                        <iframe src="geolocalizacion_sucursales.html" width="100%" height="600px"></iframe>
+
+
+                    </dl>
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </main>
+
+
+
+
+
+        <div id="pie_de_pagina"></div>
+
+
+        <script>
+            cargar_pie();
+
+            document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+        </script>
+
+
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+        <script type="text/javascript" src="js/greensock.js"></script>
+        <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+        <!-- Superscrollorama -->
+        <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+        <!--/ Superscrollorama -->
+
+        <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <!-- EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+        <!--/ EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+
+        <!--/ scripts -->
+
+        <!-- tuner -->
+        <script src="tuner/js/scripts.js"></script>
+
+        <div id="tuner" class="tuner"></div>
+        <!--/ tuner -->
+
+        <script>
+            cargar_horario();
+
+            document.getElementById("tuner").innerHTML = localStorage.horario;
+        </script>
+
+
+
+    </body>
+
+    </html>
+
+    <!-- se conecta mediante el evento:  pointer-events   que esta dentro de la clase css .maps iframe   para anular el zoom-->
+    <script>
+        $(document).ready(function() {
+            $('.maps').click(function() {
+                $('.maps iframe').css("pointer-events", "auto");
+            });
+
+            $(".maps").mouseleave(function() {
+                $('.maps iframe').css("pointer-events", "none");
+            });
+        });
+    </script>

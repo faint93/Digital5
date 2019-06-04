@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>ALPACK</title>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="ALPACK">
+    <meta name="keywords" content="ALPACK">
+    <meta name="description" content="ALPACK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!--/ metas -->
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!--/ styles -->
+
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+
+
+
+
+    <script>
+        function envio_examenes() {
+
+            window.location = ("examenes.html?var=1");
+            //document.getElementById("service4").click(); //genial enviar un click al ID service4
+
+            //setTimeout(function(){ window.location = ("examenes.html");  }, 1000);
+
+            //setTimeout(function(){ document.getElementById("service4").click(); }, 2500);
+
+        }
+    </script>
+
+
+    <script>
+        function laboratorio() {
+            var x = 'var'; //creamos un variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+            } //genial enviar un click al ID service
+            if (src == 10) {
+                document.getElementById("service10").click();
+            } //genial enviar un click al ID service
+            if (src == 11) {
+                document.getElementById("service11").click();
+            } //genial enviar un click al ID service
+            if (src == 12) {
+                document.getElementById("service12").click();
+            } //genial enviar un click al ID service
+            if (src == 13) {
+                document.getElementById("service13").click();
+            } //genial enviar un click al ID service
+        }
+    </script>
+
+
+    <script>
+        function sucursales() {
+            var x = 'var'; //creamos un variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+            } //genial enviar un click al ID service
+            if (src == 10) {
+                document.getElementById("service10").click();
+            } //genial enviar un click al ID service
+            if (src == 11) {
+                document.getElementById("service11").click();
+            } //genial enviar un click al ID service
+            if (src == 12) {
+                document.getElementById("service12").click();
+            } //genial enviar un click al ID service
+            if (src == 13) {
+                document.getElementById("service13").click();
+            } //genial enviar un click al ID service
+
+        }
+    </script>
+
+
+    <style>
+        .fondo {
+            background: url(img/fondo4.jpg);
+        }
+    </style>
+
+
+
+    <script type="text/javascript" src="js/menu.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="menu" class="page-header main-page sticky"></div>
+
+    <script>
+        cargar_menu();
+        document.getElementById("menu").innerHTML = localStorage.menu;
+    </script>
+
+
+
+    <!-- horario de verano -->
+    <!--
+<div style="padding-left: 100px;color:#a61c1e; "><p><b>Cambios en Horario de Verano: </b><i>Los días Sábados de Enero y Febrero no atenderá el Laboratorio por feriado del personal.</i></p></div>
+-->
+    <!-- horario de verano -->
+
+
+
+
+    <!-- slider -->
+    <div class="slider-wrapper">
+        <section class="slider" id="slider">
+
+
+
+            <div class="ls-slide" data-ls="transition2d:9;slidedelay:3000;">
+                <img src="pic/medical-slide-1.jpg" alt="" class="ls-bg">
+
+                <div class="intro ls-l" data-ls="offsetyin:top;offsetxin:0;durationin:2000;offsetyout:bottom;offsetxout:0;durationout:1000;" style="left:80%;top:35%;">
+                    <span class="icon fa fa-file-text-o"></span>
+                    <h2><span>Atendemos todas tus</span>CONSULTAS</h2>
+
+                    <div class="buttons">
+                        <a href="contacto.html" class="button">AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ls-slide" data-ls="transition2d:9;slidedelay:3000;">
+                <img src="pic/medical-slide-2.jpg" alt="" class="ls-bg">
+                <div class="intro ls-l" data-ls="scalexin:0.3;scaleyin:0.3;rotatexin:180;offsetxin:0;durationin:2000;durationout:2000;scalexout:2;scaleyout:2;offsetxout:0;fadeout:true;showuntil:3000;" style="left:80%;top:35%;">
+                    <span class="icon fa fa-file-text-o"></span>
+                    <h2><span>Atendemos todas tus</span>CONSULTAS</h2>
+
+                    <div class="buttons">
+                        <a href="contacto.html" class="button">AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ls-slide" data-ls="transition2d:9;slidedelay:3000;">
+                <img src="pic/medical-slide-3.jpg" alt="" class="ls-bg">
+                <div class="intro ls-l" data-ls="skewxin:30;skewyin:0;offsetxin:right;fadein:false;durationin:2000;durationout:1000;offsetxout:right;offsetyout:0;fadeout:true;" style="left:80%;top:35%;">
+                    <span class="icon fa fa-file-text-o"></span>
+                    <h2><span>Atendemos todas tus</span>CONSULTAS</h2>
+
+                    <div class="buttons">
+                        <a href="contacto.html" class="button">AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="ls-slide" data-ls="transition2d:9;slidedelay:3000;">
+                <img src="pic/medical-slide-4.jpg" alt="" class="ls-bg">
+                <div class="intro ls-l" data-ls="skewxin:30;skewyin:0;offsetxin:right;fadein:false;durationin:2000;durationout:1000;offsetxout:right;offsetyout:0;fadeout:true;" style="left:80%;top:35%;">
+                    <span class="icon fa fa-file-text-o"></span>
+                    <h2><span>Atendemos todas tus</span>CONSULTAS</h2>
+
+                    <div class="buttons">
+                        <a href="contacto.html" class="button">AQUÍ</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+    </div>
+    <!--/ slider -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- page content -->
+    <main class="page-content">
+        <div class="grid-row">
+            <!-- benefits -->
+            <section class="benefits">
+                <ul>
+                    <li>
+                        <div class="pic"> <img src="img/icon_aclin.png" width="100" height="100"></div>
+                        <div class="text">
+
+                            <a href="quienessomos.html">
+                                <h2 style="color:white;">¿Quiénes</br>Somos?</h2>
+                                <p style="color:white;">Nuestro empresa surge de un sueño, el cual se concreta el...</p>
+                            </a>
+
+                            <a href="quienessomos.html" class="more"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><img src="img/icon_galeria.png" width="100" height="100"></div>
+                        <div class="text">
+
+                            <a href="galeria.html">
+                                <h2 style="color:white">GALERIA</h2>
+                                <p style="color:white;">Galería de fotos actualizada, de nuestra empresa y nuestras dependencias.</p>
+                            </a>
+                            <a href="galeria.html" class="more"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><img src="img/icon_profesionales.png" width="100" height="100"></div>
+                        <div class="text">
+                            <a href="noticias.html">
+                                <h2 style="color:white">NOTICIAS</h2>
+                                <p style="color:white">Información importante relacionada con nuestra empresa, nuestros servicios y otros.</p>
+                            </a>
+
+                            <a href="noticias.html" class="more"></a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="pic"><img src="img/icon_contacto.png" width="100" height="100"></div>
+                        <div class="text">
+                            <a href="contacto.html">
+                                <h2 style="color:white">CONTACTO</h2>
+                                <p style="color:white">Dudas, consultas, inquietudes, contáctenos</p>
+                            </a>
+                            <a href="contacto.html" class="more"></a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--/ benefits -->
+        </div>
+
+
+
+
+        <div class="grid-row">
+
+
+            <!--
+            <section>
+                <div class="widget-title"><span>Bono Electrónico</span> I-MED</div>
+
+                <div class="wpb_text_column wpb_content_element">
+                    <div class="wpb_wrapper">
+                        <img src="img/logos/bono_electronico.jpg" width="450" height="150" alt="" class="alignleft">
+                        <p class="capitalized">El sistema de bono electrónico extendido por todo el país, nos ofrece una excelente forma de comprar los bonos de una forma fácil y expedita. El desarrollo de la tecnología en beneficio de nuestros pacientes.</p>
+                        <p>La venta de <b>Bono Electrónico</b> es un servicio de nuestro laboratorio además de los <b>Convenios con Isapres</b> y <b>Convenios Especiales</b>. </p>
+                    </div>
+                </div>
+            </section>
+            -->
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="grid-row">
+            <div class="testimonial">
+                <div class="clearfix">
+                    <img src="img/otros/STAPIA.jpg" alt="inmfs" width="96" height="96"> Bienvenidos a Nuestra Nueva Página Web renovada.
+                    <br>
+
+                </div>
+                <br>
+                <div class="author">ALPACK</div>
+            </div>
+        </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="pie_de_pagina"></div>
+
+
+        <script>
+            cargar_pie();
+
+            document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+        </script>
+
+
+
+
+
+
+
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+        <script type="text/javascript" src="js/greensock.js"></script>
+        <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+        <!-- Superscrollorama -->
+        <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+        <!--/ Superscrollorama -->
+
+        <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <!-- EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+        <!--/ EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+
+        <!--/ scripts -->
+
+
+        <!-- tuner -->
+        <script src="tuner/js/scripts.js"></script>
+
+
+
+
+        <div id="tuner" class="tuner"></div>
+
+
+        <script>
+            cargar_horario();
+
+            document.getElementById("tuner").innerHTML = localStorage.horario;
+        </script>
+
+
+
+        <!--
+	
+<div id="tuner_2" class="tuner_2"></div>
+		
+		
+<script>
+
+cargar_derechos_y_deberes();
+
+document.getElementById("tuner_2").innerHTML = localStorage.derechos_y_deberes;
+
+</script>
+
+-->
+
+        <!--/ tuner -->
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

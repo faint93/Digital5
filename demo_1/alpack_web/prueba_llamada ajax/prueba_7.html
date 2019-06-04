@@ -1,0 +1,20 @@
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script>
+
+        $.support.cors = true;
+        $.ajax({
+            type: "POST",
+            url: "http://186.67.178.2/ajax/respuesta7.json?callback=jQuery16407422359699849039_1353499175935&_=1353499176045",
+            dataType: 'jsonp',
+            crossDomain: true,
+            success: function (data) {
+                alert("ok");
+            },
+            error: function (response) {
+                alert("error");
+            }
+        });
+    
+
+</script>
+

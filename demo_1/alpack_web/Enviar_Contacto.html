@@ -1,0 +1,236 @@
+<?php 
+
+$nombre = $_POST['nombre'];
+$empresa = $_POST['empresa'];
+$fono = $_POST['fono'];
+$mail = $_POST['mail'];
+$comentario = $_POST['comentario'];
+
+
+$header = 'From: ' . $mail . " \r\n";
+$header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
+$header .= "Mime-Version: 1.0 \r\n";
+$header .= "Content-Type: text/plain";
+
+$mensaje = "Este mensaje fue enviado por:" . $nombre . ", " . $empresa . ", " . $fono .  " \r\n";
+$mensaje .= "Su e-mail es: " . $mail . " \r\n";
+$mensaje .= "comentario: " . $_POST['comentario'] . " \r\n";
+$mensaje .= "Enviado el " . date('d/m/Y', time());
+
+//$para = 'contacto@laboratorioancud.cl';
+
+$para = 'mjarte@gmail.com';
+$asunto = 'Contacto desde www.laboratorioancud.cl';
+
+mail($para, $asunto, utf8_decode($mensaje), $header);
+
+?>
+
+
+
+
+<HTML>
+<HEAD>
+<style type="text/css">
+<!--
+   .header {font-family:Arial black , sans-serif; font-size: 10px; COLOR:#333333; padding-left:10; padding-right:5; font-weight:100 }
+   .text {font-family:Tahoma,sans-serif; font-size: 12px; color:#404040; padding-left:20; padding-right:10 }
+    .news {font-family:Arial, sans-serif; font-size: 8pt; color:#636363; padding-left:10; padding-right:5; font-weight:900; }
+   a:link{text-decoration: underline; color: #FF4800}
+  a:visited{text-decoration: underline; color: #FF4800}
+  a:hover{text-decoration: underline; color: #FF4800}
+  a:active{text-decoration: underline; color: #FF4800}
+body {
+	background-color: #E9E9E9;
+}
+.Estilo2 {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+	color: #2FB22F;
+}
+.Estilo3 {color: #2FB22F}
+-->
+</style>
+
+
+
+
+<TITLE>www.laboratorioancud.cl</TITLE>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+//-->
+</script>
+</HEAD>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINWIDTH=0 MARGINHEIGHT=0 onLoad="MM_preloadImages('images/pie_2.jpg')">
+<!-- ImageReady Slices (024_sp.psd) -->
+<TABLE WIDTH=784 BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0 bgcolor="#FFFFFF">
+<tr>
+	<td width="1" rowspan=100 bgcolor=#000000><img src="images/spacer.gif" with=1></td>
+	<td width="782">
+<table width="781" height="171">
+  <tr>
+    <td width="773" height="119"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="776" height="150">
+      <param name="movie" value="media/banner_principal1_7.swf">
+      <param name="quality" value="high">
+      <embed src="media/banner_principal1_7.swf" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" width="776" height="150"></embed>
+    </object></td>
+  </tr>
+  <tr>
+    <td height="44">
+	<table width="773" height="42">
+      <tr>
+        <!--td align="center" valign="top" background="Fotos/Sin-titulo-1_03.gif">&nbsp;  </td-->
+		<!--TD HEIGHT=39 align="center" colspan="11" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><a href="ubicacion.html" target="_self" onMouseOver="MM_swapImage('ubicacion','','Fotos/Sin-titulo-1_03.JPG',1)" onMouseOut="MM_swapImgRestore()"><img src="Fotos/Sin-titulo-1_03.JPG" name="ubicacion" width="100" height="77" border="0"></a></TD-->
+<!-- End Publishing Scripts of Flash Menu 123 -->		
+        <td width="751" height="36">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="769" height="34" align="left">
+            <param name="movie" value="media/menu_verce.swf">
+            <param name="quality" value="high">
+            <embed src="media/menu_verce.swf" width="769" height="34" align="left" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed>
+          </object></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</td>
+	<td width="10" rowspan=100 bgcolor=#000000><img src="images/spacer.gif" with=1></td>
+</tr>
+<tr><td>
+
+    <div align="center">
+      <!--   -->
+      <TABLE WIDTH=780 height=100% BORDER=0 align="center" CELLPADDING=0 CELLSPACING=0 bordercolor="#FFFFFF" bgcolor="#FFFFFF">
+        <!--DWLayoutTable-->
+        
+        <TR>
+          <TD height=256 COLSPAN=5 valign="top" bgcolor="#FFFFFF">
+            <!--left text-->
+            <TABLE WIDTH=253 BORDER=0 CELLPADDING=0 CELLSPACING=0 align="center">
+              <!--DWLayoutTable-->
+              <TR>
+                <td height="20" colspan="3" valign="top" bgcolor="#FFFFFF"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	          </tr>
+              <TR>
+                <td width="19" rowspan="3" valign="top" bgcolor="#FFFFFF"><!--DWLayoutEmptyCell-->&nbsp;</td>
+	            <td width="197" height="368" valign="top"><p>
+	              <!--script type="text/javascript">
+AC_FL_RunContent( 'codebase','http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0','width','200','height','200','src','media/banner_1','quality','high','pluginspage','http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash','movie','media/1_Izquierdo' ); //end AC code
+    </script-->
+	              
+	              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="197" height="184">
+	                <param name="movie" value="images/etiquetas/imed.jpg">
+	                <param name="quality" value="high">
+	                <param name="SCALE" value="exactfit">
+	                <embed src="images/etiquetas/imed.jpg" width="197" height="184" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit"></embed>
+	                </object>
+	              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="197" height="184">
+	                <param name="movie" value="images/etiquetas/formaspago.jpg">
+	                <param name="quality" value="high">
+	                <param name="SCALE" value="exactfit">
+	                <embed src="images/etiquetas/formaspago.jpg" width="197" height="184" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit"></embed>
+	                </object>
+	                </p></td>
+	        <td width="37"></td>
+	            </tr>
+              <TR>
+                <td height="185" valign="top" bgcolor="#FFFFFF"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="197" height="184">
+                  <param name="movie" value="images/etiquetas/resultados.jpg">
+                  <param name="quality" value="high">
+                  <param name="SCALE" value="exactfit">
+                  <embed src="images/etiquetas/resultados.jpg" width="197" height="184" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" scale="exactfit"></embed>
+                </object></td>
+	          <td></td>
+              </tr>
+              <TR>
+                <td height="17"></td>
+                <td></td>
+              </tr>
+              </table>
+		        
+		  <!-- end of left text-->			</TD>
+        <TD COLSPAN=6 valign="top"><div align="center"><!-- end of right text-->
+          </div>
+          <table width="522">
+            <tr>
+              <td height="45" background="Fotos/Contacto.gif">&nbsp;</td>
+            </tr>
+            <tr>
+              <td><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,28,0" width="518" height="142" align="top">
+                <param name="movie" value="media/Aclin_Sucursales.swf">
+                <param name="quality" value="high">
+                <embed src="media/Aclin_Sucursales.swf" width="518" height="142" align="top" quality="high" pluginspage="http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash"></embed>
+                </object></td>
+            </tr>
+            <tr>
+              <td><div align="center" class="Estilo2">
+                <p>&nbsp;</p>
+                <p>Gracias por Contactarnos </p>
+              </div></td>
+            </tr>
+            <tr>
+              <td><div align="center" class="Estilo2">Pronto nos comunicaremos con usted. </div></td>
+            </tr>
+            </table>  
+          <p>&nbsp;</p></TD>
+          </TR>
+        
+        <TR>
+          <TD HEIGHT=39 colspan="11" valign="top" bordercolor="#FFFFFF" bgcolor="#FFFFFF"><img src="images/pie_aclin1.jpg" name="ubicacion" width="779" height="67" border="0"></TD>
+          </TR>
+        <TR>
+          <TD HEIGHT=40 COLSPAN=11 align="center" background="images/25.jpg" bgcolor="#FFFFFF" ALT="">
+            <div class="text">
+              <p>Laboratorio Clínico y Centro Médico Ancud - Aníbal Pinto Nº 308 - Fono/Fax: 065-623017, 065-623096 - Región de Los Lagos - Chile - Email : contacto@laboratorioancud.cl</p>
+            </div>        </TD>
+          </TR>
+        <TR>
+          <TD width="19">
+            <IMG SRC="images/spacer.gif" WIDTH=19 HEIGHT=1 ALT=""></TD>
+	        <TD width="75">
+	          <IMG SRC="images/spacer.gif" WIDTH=75 HEIGHT=1 ALT=""></TD>
+	        <TD width="104">
+	          <IMG SRC="images/spacer.gif" WIDTH=104 HEIGHT=1 ALT=""></TD>
+	        <TD width="13">
+	          <IMG SRC="images/spacer.gif" WIDTH=13 HEIGHT=1 ALT=""></TD>
+	        <TD width="42">
+	          <IMG SRC="images/spacer.gif" WIDTH=42 HEIGHT=1 ALT=""></TD>
+	        <TD width="34">
+	          <IMG SRC="images/spacer.gif" WIDTH=34 HEIGHT=1 ALT=""></TD>
+	        <TD width="94">
+	          <IMG SRC="images/spacer.gif" WIDTH=94 HEIGHT=1 ALT=""></TD>
+	        <TD width="108">
+	          <IMG SRC="images/spacer.gif" WIDTH=108 HEIGHT=1 ALT=""></TD>
+	        <TD width="77">
+	          <IMG SRC="images/spacer.gif" WIDTH=77 HEIGHT=1 ALT=""></TD>
+	        <TD width="117">
+	          <IMG SRC="images/spacer.gif" WIDTH=117 HEIGHT=1 ALT=""></TD>
+	        <TD width="97">
+	          <IMG SRC="images/spacer.gif" WIDTH=97 HEIGHT=1 ALT=""></TD>
+          </TR>
+        <TR>
+          <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+            <TD><!--DWLayoutEmptyCell-->&nbsp;</TD>
+          </TR>
+          </TABLE>
+      <!--   -->
+      </div></td></tr></table>
+
+</BODY>
+</HTML>

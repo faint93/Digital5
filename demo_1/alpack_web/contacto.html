@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>ALPACK</title>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="ALPACK">
+    <meta name="keywords" content="Centro Médico, Laboratorio Clínico, Frilab">
+    <meta name="description" content="ALPACK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!--/ metas -->
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!--/ styles -->
+
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+
+    <script src="http://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body>
+    <div id="menu" class="page-header main-page sticky"></div>
+
+
+    <div class="page">
+
+
+
+        <!-- quick search 
+			<form id="quick-search" class="quick-search">
+				<fieldset>
+					<legend>Búsqueda:</legend>
+					
+					<input type="text" placeholder="Búsqueda por nombre" id="docname" name="docname" class="ui-autocomplete-input" autocomplete="off">
+					
+					<select>
+						<option value="0">Especialidad</option>
+						<option value="1"> Anestesia </option>
+<option value="2"> Cardiología </option>
+<option value="3"> Cirugía </option>
+<option value="4"> Cirugía Pediátrica </option>
+
+<option value="6"> Diagnóstico por Imágenes </option>
+<option value="7"> Educacion Superior </option>
+<option value="8"> Enfermería </option>
+<option value="9"> Gastroenterología </option>
+<option value="10"> Ginecología Y Obstetricia </option>
+<option value="11"> Infectología </option>
+<option value="12"> Kinesiología </option>
+<option value="13"> Laboratorio Clínico </option>
+<option value="14"> Medicina Legal </option>
+<option value="15"> Medico Clínico </option>
+<option value="16"> Medico Familia </option>
+<option value="17"> Medico Laboral </option>
+<option value="18"> Nefrología </option>
+<option value="19"> Neurociencia </option>
+<option value="20"> Nutrición </option>
+<option value="21"> Odontología </option>
+<option value="22"> Oftalmología </option>
+<option value="23"> Oncología Clínica </option>
+<option value="24"> Ortesis y Prótesis </option>
+<option value="25"> Pediatría </option>
+<option value="26"> Radiología </option>
+<option value="27"> Reumatología </option>
+<option value="28"> Terapia Intensiva </option>
+<option value="29"> Trabajo Social </option>
+<option value="30"> Traumatología </option>
+<option value="31"> Urología </option>
+
+					</select>
+					
+					<select>
+						<option value="0">Consultorio</option>
+						<option value="1">Central</option>
+						<option value="2">Sede 1</option>
+						<option value="3">Sede 2</option>
+						
+					</select>
+					
+					<button type="submit">Buscar</button>
+					<div class="switcher">
+						<button id="quick-search-switcher" type="button">Mi Médico</button>
+					</div>
+				</fieldset>				
+			</form>
+			<!--/ quick search -->
+        <!--/ HEADERS -->
+
+        <!-- page title -->
+        <section class="page-title">
+            <div class="grid-row clearfix">
+                <h1>Contacto</h1>
+
+                <nav class="bread-crumbs">
+                    <a href="index.html">INICIO</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+                    <a href="#">Contacto</a>
+                </nav>
+            </div>
+        </section>
+        <!--/ page title -->
+
+
+
+        <main class="page-content">
+
+
+            <div class="grid-row">
+                <div class="grid-col grid-col-9">
+                    <!-- feedback -->
+                    <article class="feedback">
+                        <div class="widget-title">Realice su consulta aquí: </div>
+
+
+                        <div id="validar_nombre" style="display:none;"></div>
+                        <div id="validar_ciudad" style="display:none;"></div>
+                        <div id="validar_fono" style="display:none;"></div>
+                        <div id="validar_email" style="display:none;"></div>
+                        <div id="validar_comentario" style="display:none;"></div>
+
+                        <br>
+
+                        <form action="" method="post" name="contacto" id="contacto">
+                            <!-- myformmail.php  Enviar_Contacto.html-->
+
+                            <input type="hidden" name="subject" value="Formulario de Contacto - Consultas">
+                            <input type="hidden" name="recipient" value="mjarte@gmail.com">
+                            <input type="hidden" name="req" value="nombre,ciudad,fono,email,comentario">
+
+                            <fieldset>
+                                <div class="clearfix">
+                                    <div class="input">
+                                        <label>Nombre:</label>
+                                        <input id="nombre" type="text" name="nombre" required>
+                                    </div>
+                                    <div class="input">
+
+                                        <label>Ciudad:</label>
+                                        <input id="ciudad" type="text" name="ciudad" required>
+
+                                    </div>
+
+                                </div>
+                                <div class="clearfix">
+                                    <div class="input">
+
+                                        <label>Fono:</label>
+                                        <input id="fono" type="text" name="fono" required>
+
+                                    </div>
+                                    <div class="input">
+
+                                        <label>Email:</label>
+                                        <input id="email" type="text" name="email" required>
+
+                                    </div>
+                                </div>
+                                <label>Comentario:</label>
+                                <textarea id="comentario" rows="2" name="comentario" required></textarea>
+
+                                <!--<button type="submit" class="button" value="Submit">Enviar</button> -->
+
+                                <button type="submit" class="button" onclick="enviar_correo2();">Enviar</button>
+                                <button type="submit" class="button" onclick="GetData();">prueba</button>
+                            </fieldset>
+                        </form>
+                    </article>
+                    <!--/ feedback -->
+                </div>
+
+
+
+
+
+
+                <div class="grid-col grid-col-3">
+                    <!-- contacts -->
+                    <section class="widget widget-contacts">
+                        <div class="widget-title">Información</div>
+                        <dl>
+                            <dt class="opened">Mesa de Ayuda</dt>
+                            <dd>
+                                <ul>
+                                    <li><i class="fa fa-map-marker"></i>Manuel Montt Nº 480 Bernardo O’Higgins Nº 357 - Rancagua - VI Región - Chile</li>
+                                    <li><i class="fa fa-phone"></i>Fono: +56-9 7987 7986</li>
+                                    <li><i class="fa fa-envelope"></i>contacto@alpack.cl</li>
+                                </ul>
+                            </dd>
+
+                        </dl>
+                    </section>
+                    <!--/ contacts -->
+                </div>
+
+
+
+            </div>
+        </main>
+
+
+    </div>
+
+
+    <div id="pie_de_pagina"></div>
+
+
+    <!-- <button class="button" onclick="prueba();">Prueba</button>	 -->
+
+
+    <script>
+        cargar_pie();
+
+        document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+    </script>
+
+
+
+
+    <!-- scripts -->
+
+    <script>
+        cargar_menu();
+        document.getElementById("menu").innerHTML = localStorage.menu;
+    </script>
+
+
+    <!-- <script type="text/javascript" src="js/jquery.min.js"></script> -->
+
+
+
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+    <script type="text/javascript" src="js/greensock.js"></script>
+    <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+    <!-- Superscrollorama -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+    <!--/ Superscrollorama -->
+
+    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <!-- EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <!--/ EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!--/ scripts -->
+
+    <!-- tuner -->
+    <script src="tuner/js/scripts.js"></script>
+
+    <div id="tuner" class="tuner"></div>
+    <!--/ tuner -->
+
+    <script>
+        cargar_horario();
+
+        document.getElementById("tuner").innerHTML = localStorage.horario;
+    </script>
+
+
+
+</body>
+
+</html>

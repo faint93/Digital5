@@ -1,0 +1,1363 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>ALPACK</title>
+
+
+    <script>
+        function buscar() {
+            limpiar2();
+            //alert("ok");
+            // Obtenemos el valor por el id
+
+            var str = "hemo";
+
+            //var str=document.getElementById("codigo").value;  //con este sacamos el valor del input
+
+
+            // document.getElementById("resultado").innerHTML=" \
+            //  <br>Respuesta: "+str; 
+            //
+
+            var xmlhttp;
+            if (str == "") {
+                document.getElementById("resultado").innerHTML = "";
+                return;
+            }
+            if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            } else { // code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            xmlhttp.onreadystatechange = function() {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                    document.getElementById("resultado").innerHTML = xmlhttp.responseText;
+                }
+            }
+            xmlhttp.open("GET", "http://186.67.178.3/ACLIN/getcustomer6.asp?q=" + str, true);
+            xmlhttp.send();
+            //
+
+        }
+    </script>
+
+
+
+    <script>
+        function limpiar() {
+
+            document.getElementById("respuesta_busqueda").innerHTML = "";
+
+        }
+    </script>
+
+
+
+    <script>
+        function buscar2() {
+            // limpiar();
+            //alert("ok");
+            // Obtenemos el valor por el id
+            var str = document.getElementById("codigo2").value;
+
+            alert("str 1 " + str);
+
+            if (str.length == 0) {
+
+                document.getElementById("respuesta_busqueda").innerHTML = "";
+                return;
+            } else {
+                alert("str 2 " + str);
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+
+                        alert("1" + xmlhttp.readyState);
+                        alert("2" + xmlhttp.status);
+                        alert("3" + xmlhttp.responseText);
+
+                        document.getElementById("respuesta_busqueda").innerHTML = xmlhttp.responseText;
+                    }
+                };
+                xmlhttp.open("GET", "guest.asp?q=" + str, true);
+                xmlhttp.send();
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        function limpiar() {
+
+            document.getElementById("resultado").innerHTML = "";
+
+        }
+    </script>
+
+
+    <script>
+        function limpiar2() {
+
+            document.getElementById("resultado2").innerHTML = "";
+
+        }
+    </script>
+
+
+
+
+    <script>
+        function envio_1() {
+
+            window.location = ("examenes.html?var=1");
+            //document.getElementById("service4").click(); //genial enviar un click al ID service4
+
+            //setTimeout(function(){ window.location = ("examenes.html");  }, 1000);
+
+            //setTimeout(function(){ document.getElementById("service4").click(); }, 2500);
+
+        }
+    </script>
+
+
+
+    <script>
+        function examenes() {
+            var x = 'var'; //creamos una variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+                document.getElementById("service1").style.display = "block";
+                document.getElementById("resultado1").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+                document.getElementById("service2").style.display = "block";
+                document.getElementById("resultado2").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+                document.getElementById("service3").style.display = "block";
+                document.getElementById("resultado3").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+                document.getElementById("service4").style.display = "block";
+                document.getElementById("resultado4").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+                document.getElementById("service5").style.display = "block";
+                document.getElementById("resultado5").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+                document.getElementById("service6").style.display = "block";
+                document.getElementById("resultado6").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+                document.getElementById("service7").style.display = "block";
+                document.getElementById("resultado7").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+                document.getElementById("service8").style.display = "block";
+                document.getElementById("resultado8").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+                document.getElementById("service9").style.display = "block";
+                document.getElementById("resultado9").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 10) {
+                document.getElementById("service10").click();
+                document.getElementById("service10").style.display = "block";
+                document.getElementById("resultado10").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 11) {
+                document.getElementById("service11").click();
+                document.getElementById("service11").style.display = "block";
+                document.getElementById("resultado11").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 12) {
+                document.getElementById("service12").click();
+                document.getElementById("service12").style.display = "block";
+                document.getElementById("resultado12").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 13) {
+                document.getElementById("service13").click();
+                document.getElementById("service13").style.display = "block";
+                document.getElementById("resultado13").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 14) {
+                document.getElementById("service14").click();
+                document.getElementById("service14").style.display = "block";
+                document.getElementById("resultado14").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 15) {
+                document.getElementById("service15").click();
+                document.getElementById("service15").style.display = "block";
+                document.getElementById("resultado15").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 16) {
+                document.getElementById("service16").click();
+                document.getElementById("service16").style.display = "block";
+                document.getElementById("resultado16").style.display = "block";
+            } //genial enviar un click al ID service
+            if (src == 17) {
+                document.getElementById("service17").click();
+                document.getElementById("service17").style.display = "block";
+                document.getElementById("resultado17").style.display = "block";
+            } //genial enviar un click al ID service
+
+
+        }
+    </script>
+
+
+    <script>
+        function sucursales() {
+            var x = 'var'; //creamos una variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+            } //genial enviar un click al ID service
+        }
+    </script>
+
+    <script language="javascript">
+        function crearframe() {
+            var testframe = document.createElement("iframe");
+            testframe.id = "testframe";
+            testframe.src = "http://186.67.178.3/ACLIN/getcustomer5.asp?q=hemo";
+            document.body.appendChild(testframe);
+        }
+    </script>
+
+
+
+    <style>
+        .ocultar {
+            display: none;
+        }
+        
+        .mostrar {
+            display: block;
+        }
+        
+        .testimonial_2 img {
+            display: block;
+            float: right;
+            margin-right: 20px;
+            padding: 1px;
+            border: 1px solid #e3e3e3;
+        }
+        
+        .wpb_text_column .alignright {
+            float: right;
+            margin: 0 20px 10px 0;
+            padding: 3px;
+            border: 1px solid #e4e4e4;
+        }
+    </style>
+
+
+
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="ALPACK">
+    <meta name="keywords" content="Centro Médico, Laboratorio Clínico, Frilab">
+    <meta name="description" content="ALPACK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!--/ metas -->
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos_aclin.css">
+    <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!--/ styles -->
+
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+    <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+
+
+    <script type="text/javascript" src="js/menu.js"></script>
+
+</head>
+
+<body onload="examenes()">
+
+
+
+    <div id="menu" class="page-header main-page sticky"></div>
+
+    <script>
+        cargar_menu();
+        document.getElementById("menu").innerHTML = localStorage.menu;
+    </script>
+
+    <!--/ HEADERS -->
+
+    <!-- page title -->
+    <section class="page-title">
+        <div class="grid-row clearfix">
+            <h1>Laboratorio </h1>
+            <br>
+            <h3> :::: EXAMENES: Química, Hematología, Hormonas, Orinas, Microbiología, Inmunología y Otros</h3>
+        </div>
+    </section>
+    <!--/ page title -->
+
+
+
+
+
+    <div align="center" id="respuesta_busqueda"></div>
+    <!--<div align="center">     <iframe style="width:90%;" name="frametest" id="frametest" src="guest.asp?q="+str ></iframe></div>	-->
+
+
+
+
+    <main class="page-content">
+        <div class="grid-row">
+            <div class="grid-col grid-col-9">
+                <section class="detailed-services wpb_content_element">
+                    <div class="widget-title"> Exámenes</div>
+
+                    <dl>
+
+
+                        <dt id="service1" class="ocultar"><i class="fa fa-check"></i>Exámenes Hematólogicos</dt>
+
+                        <dd>
+
+                            <div class="row" align="center">
+
+
+                                <div align="left" id="resultado1" class="testimonial_2 ocultar" style="display: block;">
+
+
+                                    <img src="examenes/our-phylosophy.jpg" width="260" height="246" alt="" class="alignrigth">
+
+                                    <b>I - Sangre, Hematología</b>
+
+                                    <br>
+
+                                    <td>
+                                        <p>&nbsp;</p>
+                                        <li>
+                                            <p>Ferritina</p>
+                                        </li>
+                                        <li>
+                                            <p>Capacidad de fijación (incluye fierro sérico fierro), cinética del (cada determinación fierro.</p>
+                                        </li>
+                                        <li>
+                                            <p>Hematocrito</p>
+                                        </li>
+                                        <li>
+                                            <p>Hemoglobina en sangre total</p>
+                                        </li>
+                                        <li>
+                                            <p>Hemoglobina Glicosilada</p>
+                                        </li>
+                                        <li>
+                                            <p>Hemoglobina, electroforesis de (incluye&nbsp;HB. total)</p>
+                                        </li>
+                                        <li>
+                                            <p>Hemograma (incluye recuentos de leucocitos y eritrocitos, hemoglobina, hematrocito, formula leucocitaria, caracteristicas de los elementos figurados y velocidad de eritrosedimentación)</p>
+                                        </li>
+                                        <li>
+                                            <p>Protombina, tiempo de o consumo de (incluye INR, relación internacional normalizada)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuentos de eosinofilos (absoluto)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuentos de eritrocitos, absoluto (Proc. Aut.)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuentos de leucocitos, absoluto (Proc. Aut.)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuentos de&nbsp;linfocitos (absoluto)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuentos de plaquetas (absoluto)</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuento de reticulocitos</p>
+                                        </li>
+                                        <li>
+                                            <p>Recuento diferencial o formula leucocitaria</p>
+                                        </li>
+                                        <li>
+                                            <p>Sangría, tiempo de (IVY)</p>
+                                        </li>
+                                        <li>
+                                            <p>Subgrupo ABO y RH fenotipo - genotipo RH c/u</p>
+                                        </li>
+                                        <li>
+                                            <p>Transferrina</p>
+                                        </li>
+                                        <li>
+                                            <p>Tromboplastina, tiempo de generación de (TGT)</p>
+                                        </li>
+                                        <li>
+                                            <p>Velocidad de eritrosedimentación</p>
+                                        </li>
+                                        <li>
+                                            <p>Vitamina B12, Absorción</p>
+                                        </li>
+                                    </td>
+
+                                    <br>
+
+                                </div>
+
+
+
+
+                        </dd>
+
+
+
+
+
+
+                        <dt id="service2" class="ocultar"><i class="fa fa-check"></i>Exámenes Bioquimicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado2" class="testimonial_2 ocultar">
+
+                                        <td>
+                                            <b>II - Sangre, Examenes Bioquimicos</b>
+                                            <p>&nbsp;</p>
+                                            <li>
+                                                <p>Acido láctico</p>
+                                            </li>
+                                            <li>
+                                                <p>Acido úrico, en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Amilasa, en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Aminoacídos, cualitativo en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Apoliproteinas (A1, B u otras)</p>
+                                            </li>
+                                            <li>
+                                                <p>Bilirrubina total (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Bilirrubina total y conjugada</p>
+                                            </li>
+                                            <li>
+                                                <p>Calcio en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Calcio iónico, incluye proteínas totales</p>
+                                            </li>
+                                            <li>
+                                                <p>Caroteno</p>
+                                            </li>
+                                            <li>
+                                                <p>Ceruloplasmina</p>
+                                            </li>
+                                            <li>
+                                                <p>Cobre</p>
+                                            </li>
+                                            <li>
+                                                <p>Colesterol total (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Colesterol HDL (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Creatinina en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Creatinina, depuración de (cleareance) (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Creatinquinasa CK - MB miocárdica</p>
+                                            </li>
+                                            <li>
+                                                <p>Creatinquinasa CK total</p>
+                                            </li>
+                                            <li>
+                                                <p>Troponina</p>
+                                            </li>
+                                            <li>
+                                                <p>Depuraciones (cleareance) exógenas de hipuran,rojo congo, manitol e inulina, c/u (no incluye medicamento)</p>
+                                            </li>
+                                            <li>
+                                                <p>Deshidrogenasa Hidroxibutírica (HBDB)</p>
+                                            </li>
+                                            <li>
+                                                <p>Deshidrogenasa láctica total (LDH)</p>
+                                            </li>
+                                            <li>
+                                                <p>Deshidrogenasa láctica total (LDH) zimas</p>
+                                            </li>
+                                            <li>
+                                                <p>Electrolitos plasmáticos (Sodio, Potasio, Cloro)</p>
+                                            </li>
+                                            <li>
+                                                <p>Enzima convertidora de angiotensina I</p>
+                                            </li>
+                                            <li>
+                                                <p>Perfíl lipídico (incluye : colesterol total, HDL, LDL, VLDL y Triglicéridos)</p>
+                                            </li>
+                                            <li>
+                                                <p>Fármacos y/o drogas; niveles plasmáticos de (alcohol, anorexígenos, antiarrítmicos,antibióticos, antidepresivos, anitiepilécticos, antihistamínicos, antiinlamatorios y analgésicos, estimulantes respiratorios,
+                                                    tranquilizante mayores y menores, etc) c/u</p>
+                                            </li>
+                                            <li>
+                                                <p>Fenilananina</p>
+                                            </li>
+                                            <li>
+                                                <p>Fosfatasas alcalinas totales</p>
+                                            </li>
+                                            <li>
+                                                <p>Fosfolípidos</p>
+                                            </li>
+                                            <li>
+                                                <p>Fósforo fosfato en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Gamma glutamiltranspeptidasa (GGT)</p>
+                                            </li>
+                                            <li>
+                                                <p>Gases y equilibrio&nbsp;ácido base en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Glucosa en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Glucosa, prueba de tolerancia a la glucosa oral (PTGO)</p>
+                                            </li>
+                                            <li>
+                                                <p>Adenosindeaminasa en sangre u otro fluido bíologico</p>
+                                            </li>
+                                            <li>
+                                                <p>Lactos, curva de tolerancia</p>
+                                            </li>
+                                            <li>
+                                                <p>Lipasa</p>
+                                            </li>
+                                            <li>
+                                                <p>Lípidos totales</p>
+                                            </li>
+                                            <li>
+                                                <p>Lipoproteínas, electroforesis de (incluye lípidos totales)</p>
+                                            </li>
+                                            <li>
+                                                <p>Litio</p>
+                                            </li>
+                                            <li>
+                                                <p>Magnesio</p>
+                                            </li>
+                                            <li>
+                                                <p>Nitrógeno ureico y/o urea, en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Osmolalidad, sangre exámen bioquímico</p>
+                                            </li>
+                                            <li>
+                                                <p>Perfil bioquímico</p>
+                                            </li>
+                                            <li>
+                                                <p>Proteínas fraccionadas albúmina/globulina</p>
+                                            </li>
+                                            <li>
+                                                <p>Proteinas totales o albúminas c/u en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Proteínas, electroforesis</p>
+                                            </li>
+                                            <li>
+                                                <p>Perfil hepático (incluye tiempo de protrombina, bilirrubina total y conjugada, fosfatasas alcalinas totales, GGT, trasaminasas GOT/ATS y GPT/ALT)</p>
+                                            </li>
+                                            <li>
+                                                <p>Transaminasas, oxalacética (GOT/AST), pirúvica c/u</p>
+                                            </li>
+                                            <li>
+                                                <p>Triglicéridos (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Vitaminas A, B, C, D, E, etc.</p>
+                                            </li>
+                                        </td>
+
+                                        <br>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+
+                        <dt id="service3" class="ocultar"><i class="fa fa-check"></i>Exámenes Hormonales</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado3" class="testimonial_2 ocultar">
+
+                                        <td>
+                                            <li>
+                                                <b>Exámenes Hormonales</b><br>
+                                                <p>Hormonas en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Adenocorticotrofina (ATCH)</p>
+                                            </li>
+                                            <li>
+                                                <p>Aldosterona</p>
+                                            </li>
+                                            <li>
+                                                <p>Androstenediona</p>
+                                            </li>
+                                            <li>
+                                                <p>Angiotensina</p>
+                                            </li>
+                                            <li>
+                                                <p>Catecolaminas</p>
+                                            </li>
+                                            <li>
+                                                <p>Cortisol</p>
+                                            </li>
+                                            <li>
+                                                <p>Crecimiento, hormona de (HGH)&nbsp;(somatrotofina)</p>
+                                            </li>
+                                            <li>
+                                                <p>Dehidroepiandrosterona&nbsp;sulfato (DHA, DHEA)</p>
+                                            </li>
+                                            <li>
+                                                <p>Estriol en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Gonodatrofina corionica, sub-unidad beta</p>
+                                            </li>
+                                            <li>
+                                                <p>Hormona folículo estimulante (FSH)</p>
+                                            </li>
+                                            <li>
+                                                <p>Hormona luteinizante (LH)</p>
+                                            </li>
+                                            <li>
+                                                <p>IGF1 o somatomedina - C (insuline like growth factor)</p>
+                                            </li>
+                                            <li>
+                                                <p>IGFBP3, IGFBP1 (insuline like growth factor binding protein)</p>
+                                            </li>
+                                            <li>
+                                                <p>Insulina</p>
+                                            </li>
+                                            <li>
+                                                <p>Insulina, curva de</p>
+                                            </li>
+                                            <li>
+                                                <p>Parathormona, hormona paratiroidea o PTH</p>
+                                            </li>
+                                            <li>
+                                                <p>Progesterona</p>
+                                            </li>
+                                            <li>
+                                                <p>Prolactina</p>
+                                            </li>
+                                            <li>
+                                                <p>Renina</p>
+                                            </li>
+                                            <li>
+                                                <p>SHBG (sex-hormone binding globulin)</p>
+                                            </li>
+                                            <li>
+                                                <p>Tetosterona en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Tetosterona libre en sangre</p>
+                                            </li>
+                                            <li>
+                                                <p>Tiroestimulante (TSH), hormona (adulto,adulto o r.n.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Tiroglobulina</p>
+                                            </li>
+                                            <li>
+                                                <p>Tiroxina libre (T4L)</p>
+                                            </li>
+                                            <li>
+                                                <p>Tiroxina o tetrayodotironina (T4)</p>
+                                            </li>
+                                            <li>
+                                                <p>Triyodototironina (T3)</p>
+                                            </li>
+                                            <li>
+                                                <p>17 - Hidroxiprogesterona</p>
+                                            </li>
+                                            <li>
+                                                <p>Estradiol (17 - beta)</p>
+                                            </li>
+                                            <li>
+                                                <p>&nbsp;</p>
+                                            </li>
+                                            <li>
+                                                <b><strong>EN ORINA</strong></b>
+                                            </li>
+                                            <li>
+                                                <p>Ac. vainillilmandélico, cuantitativo</p>
+                                            </li>
+                                            <li>
+                                                <p>Angiotensina</p>
+                                            </li>
+                                            <li>
+                                                <p>Catecolaminas</p>
+                                            </li>
+                                            <li>
+                                                <p>Cortisol libre urinario</p>
+                                            </li>
+                                            <li>
+                                                <p>Estriol</p>
+                                            </li>
+                                            <li>
+                                                <p>Gonodatrofina cariónica, sub-unidad; titulación por (ELISA; RIA O IRMA; Quimioluminiscencia u otra técnica)</p>
+                                            </li>
+                                            <li>
+                                                <p>&nbsp;Tetrahidrodesoxicortisol</p>
+                                            </li>
+                                            <li>
+                                                <p>17 - Cetoesteroides</p>
+                                            </li>
+                                            <li>
+                                                <p>17 - Hidroxicorticoesteroides</p>
+                                            </li>
+                                        </td>
+
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+
+
+                        <dt id="service4" class="ocultar"><i class="fa fa-check"></i>Exámenes Parasitológicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado4" class="testimonial_2 ocultar">
+
+                                        <b>Exámenes Parasitológicos</b><br><br>
+
+                                        <td>
+                                            <li>
+                                                <p>Parasitos Macro y Microscopicos</p>
+                                            </li>
+                                            <li>
+                                                <p>Graham, exámen (incluye diagnóstico de gusanos macroscópicos y exámen microscópico 5 muestras separadas)</p>
+                                            </li>
+                                            <li>
+                                                <p>Coproparasitológico seriado simple (incluye diagnóstico de gusanos macroscópicos y en exámen microscópico por concentración de muestra separadas método PAFS) (Proc. Aut.)</p>
+                                            </li>
+                                            <li>
+                                                <p>Serológicos (determinación de antígeno y anticuerpos)</p>
+                                            </li>
+                                            <li>
+                                                <p>Elisa indirecta (Chagas, Hidatidosis, Toxocariasis y otras), c/u</p>
+                                            </li>
+                                            <p>&nbsp;</p>
+                                        </td>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+
+                        <dt id="service5" class="ocultar"><i class="fa fa-check"></i>Serológicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado5" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+                        <dt id="service6" class="ocultar"><i class="fa fa-check"></i>Bacteriológicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado6" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+                        <dt id="service7" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Exámenes Bioquímicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado7" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+
+                        <dt id="service8" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Exámenes Brucelosis Bovina</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado8" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+                        <dt id="service9" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Exámenes Leucosis Bovina</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado9" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+                        <dt id="service10" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Exámenes Hematológicos</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado10" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+                        <dt id="service11" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Triquinoscopias</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado11" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+                        <dt id="service12" class="ocultar"><i class="fa fa-check"></i>Veterinaria - Varios</dt>
+                        <dd>
+                            <div class="row" align="center">
+                                <div class="">
+                                    <div align="left" id="resultado12" class="testimonial_2 ocultar">
+
+                                        <section class="widget widget-comments">
+                                            <div class="widget-title">Para mayor información:</div>
+                                            <div>
+                                                <h37>Consulte aquí o llámenos:</h37>
+                                            </div><br><br>
+
+                                            <div class="owl-item" style="width: 270px;">
+                                                <div class="item">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="contacto.html"><img src="img/email.jpg" alt=""></a>
+                                                            <div>
+                                                                <h36><a href="contacto.html">Contacto</a></h36>
+                                                            </div>
+                                                            <p>Consultas aquí:<br></p>
+                                                        </li>
+
+                                                        <li>
+                                                            <img src="img/icon_contacto.png" alt="">
+                                                            <div>
+                                                                <h36>Teléfono</h36>
+                                                            </div>
+                                                            <h37>63 2-312 775</h37><br>
+                                                            <h37>63 2-311 579</h37><br>
+                                                        </li>
+
+                                                    </ul>
+                                                </div>
+                                            </div><br>
+
+                                        </section>
+
+
+                                    </div>
+                                </div>
+                        </dd>
+
+
+
+
+
+
+
+
+                    </dl>
+
+
+
+
+                    </div>
+
+
+
+
+
+                    <!--
+    <div class="grid-col grid-col-3"> -->
+                    <!-- appointment -->
+
+
+                    <!--	<section class="detailed-services wpb_content_element">
+							<div class="widget-title"> Búsqueda General</div>														
+
+			<form align="center" id="form2">
+     <h1>Ingrese Código o Nombre del Exámen<h1>
+  
+    <div align="center">
+     	<input class="contenido_input" type="search" placeholder="Buscar" name="Código" value="" id="codigo2">
+     	<br>
+     <input class="btn_verde" type="button" value="Buscar" onclick="buscar2()">
+     <br>
+ 			  <input name="bt_limpiar" type="reset" class="btn" value="Limpiar" onclick="limpiar2()">
+ 			  <br>
+ 			  <div class="recuadro_respuesta" id="resultado2"></div>  
+
+			</div>
+
+    </form>-->
+
+                    <!--/ appointment -->
+
+
+
+
+                    <!-- appointment -->
+                    <div class="grid-col grid-col-3">
+                        <!-- appointment -->
+
+
+
+                        <section class="detailed-services wpb_content_element">
+                            <div class="widget-title"> Búsqueda General</div>
+
+                            <form align="center" id="form2">
+                                <h1>Ingrese Código o Nombre del Exámen
+                                    <h1>
+
+
+
+                                        <div align="center">
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td><input class="contenido_input" type="search" placeholder="Buscar" name="codigo2" value="" id="codigo2" onchange="buscar_indicaciones()" style="width:170px"></td>
+                                                    <td><a class="button" onclick="buscar_indicaciones()">Buscar</a></td>
+
+
+                                                    <!--<br>
+			 <input class="btn_verde" type="button" value="Buscar" onclick="buscar3()">
+			 <br>
+					  <input name="bt_limpiar" type="reset" class="btn" value="Limpiar" onclick="limpiar2()">
+					  <br>-->
+                                                    <!--<div class="recuadro_respuesta" id="resultado2"></div>  -->
+
+                                                </tr>
+                                            </table>
+
+                                            <br>
+
+                                        </div>
+
+
+
+                            </form>
+
+
+                            <table style="display:none;" id="tabla_4" border="1" cellpadding="10" class="contenido_tabla_examenes table-responsive" style="display:table;">
+                                <thead>
+                                    <tr>
+                                        <th style="background-color:#008edc;color:white;padding:3px;">Código</th>
+                                        <th style="background-color:#008edc;color:white;padding:3px;">Descripción</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="respuesta_final" align="justify">
+                                </tbody>
+
+                            </table>
+                            <div id="respuesta_pie"></div>
+
+                        </section>
+
+                    </div>
+
+
+
+                    </div>
+
+
+                    </div>
+
+    </main>
+
+
+
+
+
+
+
+    <div id="pie_de_pagina"></div>
+
+
+    <script>
+        cargar_pie();
+
+        document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+    </script>
+
+
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+    <script type="text/javascript" src="js/greensock.js"></script>
+    <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+    <!-- Superscrollorama -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+    <!--/ Superscrollorama -->
+
+    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <!-- EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <!--/ EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <!--/ scripts -->
+
+
+    <!-- tuner -->
+    <script src="tuner/js/scripts.js"></script>
+
+    <div id="tuner" class="tuner"></div>
+    <!--/ tuner -->
+
+    <script>
+        cargar_horario();
+
+        document.getElementById("tuner").innerHTML = localStorage.horario;
+    </script>
+
+
+
+</body>
+
+</html>

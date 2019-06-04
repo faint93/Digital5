@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>Google Maps Multiple Markers</title>
+    <!-- <script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script> -->
+    <!--<script src="http://maps.google.com/maps/api/js?sensor=set_to_true_or_false" type="text/javascript" ></script>-->
+
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyD5O0VOtswqu98s_FssVPWgK9mHyzbXwws" type="text/javascript"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*pone el mapa full pantalla*/
+        
+        html,
+        body,
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script type="text/javascript">
+        var locations = [
+            ['Laboratorio y Centro Medico Ancud', -39.6426776, -72.328762],
+
+        ];
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 16,
+            center: new google.maps.LatLng(-39.6426776, -72.328762), //direccion de viña y valpara -33.024527,-71.552340   manzanar  -32.9151993, -71.3703119
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            scrollwheel: false
+        });
+
+        //var infowindow = new google.maps.InfoWindow();
+        var infowindow = new google.maps.InfoWindow({
+            content: '<div style="line-height:1.35;overflow:hidden;white-space:nowrap;">ADD CONTENT</div>'
+        });
+        var icon_aclin = 'puntero.png';
+
+        var marker, i;
+
+        for (i = 0; i < locations.length; i++) {
+            marker = new google.maps.Marker({
+                position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                map: map,
+                icon: icon_aclin
+            });
+
+            google.maps.event.addListener(marker, 'click', (function(marker, i) {
+                return function() {
+                    infowindow.setContent(locations[i][0]);
+                    infowindow.open(map, marker);
+                }
+            })(marker, i));
+        }
+    </script>
+</body>
+
+</html>

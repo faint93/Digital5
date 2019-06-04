@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<?PHP
+header('Acces-Control-Allow-Origin: http://186.67.178.3/ACLIN/getcustomer6.asp');
+?>
+    <html>
+
+    <head>
+        <title>ANCUD::Laboratorio Clínico</title>
+
+
+        <script>
+            function buscar() {
+                limpiar2();
+                //alert("ok");
+                // Obtenemos el valor por el id
+
+                var str = "hemo";
+
+                //var str=document.getElementById("codigo").value;  //con este sacamos el valor del input
+
+
+                // document.getElementById("resultado").innerHTML=" \
+                //  <br>Respuesta: "+str; 
+                //
+
+                var xmlhttp;
+                if (str == "") {
+                    document.getElementById("resultado").innerHTML = "";
+                    return;
+                }
+                if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("resultado").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "http://186.67.178.3/ACLIN/getcustomer6.asp?q=" + str, true);
+                xmlhttp.send();
+                //
+
+            }
+        </script>
+
+
+
+        <script>
+            function limpiar() {
+
+                document.getElementById("resultado").innerHTML = "";
+
+            }
+        </script>
+
+
+
+        <script>
+            function buscar2() {
+                limpiar();
+                //alert("ok");
+                // Obtenemos el valor por el id
+                var str = document.getElementById("codigo2").value;
+
+
+                // document.getElementById("resultado").innerHTML=" \
+                //  <br>Respuesta: "+str; 
+                //
+                var xmlhttp;
+                if (str == "") {
+                    document.getElementById("resultado2").innerHTML = "";
+                    return;
+                }
+                if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
+                    xmlhttp = new XMLHttpRequest();
+                } else { // code for IE6, IE5
+                    xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+                }
+                xmlhttp.onreadystatechange = function() {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        document.getElementById("resultado2").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET", "http://186.67.178.3/ACLIN/getcustomer5.asp?q=" + str, true);
+                xmlhttp.send();
+                //
+
+            }
+        </script>
+
+
+
+
+
+
+
+
+        <script>
+            function limpiar() {
+
+                document.getElementById("resultado").innerHTML = "";
+
+            }
+        </script>
+
+
+        <script>
+            function limpiar2() {
+
+                document.getElementById("resultado2").innerHTML = "";
+
+            }
+        </script>
+
+
+
+
+        <script>
+            function envio_1() {
+
+                window.location = ("examenes.html?var=1");
+                //document.getElementById("service4").click(); //genial enviar un click al ID service4
+
+                //setTimeout(function(){ window.location = ("examenes.html");  }, 1000);
+
+                //setTimeout(function(){ document.getElementById("service4").click(); }, 2500);
+
+            }
+        </script>
+
+
+
+        <script>
+            function examenes() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+        <script>
+            function sucursales() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                } //genial enviar un click al ID service
+            }
+        </script>
+
+
+        <script>
+            function centro_medico() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                    document.getElementById("service1").style.display = "block";
+                    document.getElementById("resultado1").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                    document.getElementById("service2").style.display = "block";
+                    document.getElementById("resultado2").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                    document.getElementById("service3").style.display = "block";
+                    document.getElementById("resultado3").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                    document.getElementById("service4").style.display = "block";
+                    document.getElementById("resultado4").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                    document.getElementById("service5").style.display = "block";
+                    document.getElementById("resultado5").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                    document.getElementById("service6").style.display = "block";
+                    document.getElementById("resultado6").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                    document.getElementById("service7").style.display = "block";
+                    document.getElementById("resultado7").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                    document.getElementById("service8").style.display = "block";
+                    document.getElementById("resultado8").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                    document.getElementById("service9").style.display = "block";
+                    document.getElementById("resultado9").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                    document.getElementById("service10").style.display = "block";
+                    document.getElementById("resultado10").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                    document.getElementById("service11").style.display = "block";
+                    document.getElementById("resultado11").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                    document.getElementById("service12").style.display = "block";
+                    document.getElementById("resultado12").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                    document.getElementById("service13").style.display = "block";
+                    document.getElementById("resultado13").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 14) {
+                    document.getElementById("service14").click();
+                    document.getElementById("service14").style.display = "block";
+                    document.getElementById("resultado14").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 15) {
+                    document.getElementById("service15").click();
+                    document.getElementById("service15").style.display = "block";
+                    document.getElementById("resultado15").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 16) {
+                    document.getElementById("service16").click();
+                    document.getElementById("service16").style.display = "block";
+                    document.getElementById("resultado16").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 17) {
+                    document.getElementById("service17").click();
+                    document.getElementById("service17").style.display = "block";
+                    document.getElementById("resultado17").style.display = "block";
+                } //genial enviar un click al ID service
+
+
+            }
+        </script>
+
+
+
+        <script>
+            function preguntas() {
+                var x = 'var'; //creamos una variable
+                var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+                //document.getElementById("service4").innerHTML = "";
+                if (src == 1) {
+                    document.getElementById("service1").click();
+                    document.getElementById("service1").style.display = "block";
+                    document.getElementById("resultado1").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 2) {
+                    document.getElementById("service2").click();
+                    document.getElementById("service2").style.display = "block";
+                    document.getElementById("resultado2").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 3) {
+                    document.getElementById("service3").click();
+                    document.getElementById("service3").style.display = "block";
+                    document.getElementById("resultado3").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 4) {
+                    document.getElementById("service4").click();
+                    document.getElementById("service4").style.display = "block";
+                    document.getElementById("resultado4").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 5) {
+                    document.getElementById("service5").click();
+                    document.getElementById("service5").style.display = "block";
+                    document.getElementById("resultado5").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 6) {
+                    document.getElementById("service6").click();
+                    document.getElementById("service6").style.display = "block";
+                    document.getElementById("resultado6").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 7) {
+                    document.getElementById("service7").click();
+                    document.getElementById("service7").style.display = "block";
+                    document.getElementById("resultado7").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 8) {
+                    document.getElementById("service8").click();
+                    document.getElementById("service8").style.display = "block";
+                    document.getElementById("resultado8").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 9) {
+                    document.getElementById("service9").click();
+                    document.getElementById("service9").style.display = "block";
+                    document.getElementById("resultado9").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 10) {
+                    document.getElementById("service10").click();
+                    document.getElementById("service10").style.display = "block";
+                    document.getElementById("resultado10").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 11) {
+                    document.getElementById("service11").click();
+                    document.getElementById("service11").style.display = "block";
+                    document.getElementById("resultado11").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 12) {
+                    document.getElementById("service12").click();
+                    document.getElementById("service12").style.display = "block";
+                    document.getElementById("resultado12").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 13) {
+                    document.getElementById("service13").click();
+                    document.getElementById("service13").style.display = "block";
+                    document.getElementById("resultado13").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 14) {
+                    document.getElementById("service14").click();
+                    document.getElementById("service14").style.display = "block";
+                    document.getElementById("resultado14").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 15) {
+                    document.getElementById("service15").click();
+                    document.getElementById("service15").style.display = "block";
+                    document.getElementById("resultado15").style.display = "block";
+                } //genial enviar un click al ID service
+                if (src == 16) {
+                    document.getElementById("service16").click();
+                    document.getElementById("service16").style.display = "block";
+                    document.getElementById("resultado16").style.display = "block";
+                } //genial enviar un click al ID service            
+
+            }
+        </script>
+
+
+
+        <script language="javascript">
+            function crearframe() {
+                var testframe = document.createElement("iframe");
+                testframe.id = "testframe";
+                testframe.src = "http://186.67.178.3/ACLIN/getcustomer5.asp?q=hemo";
+                document.body.appendChild(testframe);
+            }
+        </script>
+
+        <style>
+            .ocultar {
+                display: none;
+            }
+            
+            .mostrar {
+                display: block;
+            }
+        </style>
+
+
+
+
+
+
+
+
+        <!-- metas -->
+        <meta charset="utf-8">
+        <meta name="author" content="ANCUD::Laboratorio Clínico">
+        <meta name="keywords" content="ANCUD. Laboratorio Clínico">
+        <meta name="description" content="ANCUD::Laboratorio Clínico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <!--/ metas -->
+
+        <!-- styles -->
+        <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+        <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/estilos_aclin.css">
+        <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+        <link rel="shortcut icon" href="img/favicon.png" />
+
+        <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+        <!--/ styles -->
+
+        <script type="text/javascript" src="js/menu.js"></script>
+
+        <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+        <link rel="stylesheet" type="text/css" href="tuner/css/styles.css">
+    </head>
+
+    <body onload="centro_medico()">
+
+        <div id="menu" class="page-header main-page sticky"></div>
+
+        <script>
+            cargar_menu();
+            document.getElementById("menu").innerHTML = localStorage.menu;
+        </script>
+
+        <!-- page title -->
+        <section class="page-title">
+            <div class="grid-row clearfix">
+                <h1>Preguntas Frecuentes</h1>
+                <br>
+                <h3></h3>
+            </div>
+        </section>
+        <!--/ page title -->
+
+
+
+
+
+
+        <main class="page-content">
+            <div class="grid-row">
+                <div class="grid-col grid-col-9">
+                    <section class="detailed-services wpb_content_element">
+                        <div class="widget-title"> Preguntas Frecuentes</div>
+
+
+
+                        <dl>
+
+
+
+
+                            <dt id="service1" class=""><i class="fa fa-check"></i>1.¿Cuáles son los horarios de atención de ALPACK? </dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado1" class="testimonial_2 ">
+
+                                            <td>
+                                                <h36>Horarios de atención</h36>
+                                                <ul>
+                                                    <li><b>Lunes a Viernes</b></li>
+                                                    <li>Mañana: (09:00 a 13:00)</li>
+                                                    <li>Tarde: (14:00 a 19:00)</li>
+                                                    <li><b>Sábado</b></li>
+                                                    <li>Mañana: (09:00 a 13:00)</li>
+                                                </ul>
+                                            </td>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+                            <dt id="service2" class=""><i class="fa fa-check"></i>2.¿Tengo que reservar hora para Hacer un pedido?</dt>
+                            <dd>
+                                <div class="row" align="center">
+                                    <div class="">
+                                        <div align="left" id="resultado2" class="testimonial_2 ">
+
+                                            <td>
+                                                <h36>Reservar hora</h36>
+                                                <ul>
+                                                    <li>La atención es....</li>
+
+                                                </ul>
+
+                                            </td>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                            </dd>
+
+
+
+
+
+
+                        </dl>
+
+
+                </div>
+
+
+
+
+
+                <!--
+    <div class="grid-col grid-col-3"> -->
+                <!-- appointment -->
+
+
+                <!--	<section class="detailed-services wpb_content_element">
+							<div class="widget-title"> Búsqueda General</div>														
+
+			<form align="center" id="form2">
+     <h1>Ingrese Código o Nombre del Examen<h1>
+  
+    <div align="center">
+     	<input class="contenido_input" type="search" placeholder="Buscar" name="Código" value="" id="codigo2">
+     	<br>
+     <input class="btn_verde" type="button" value="Buscar" onclick="buscar2()">
+     <br>
+ 			  <input name="bt_limpiar" type="reset" class="btn" value="Limpiar" onclick="limpiar2()">
+ 			  <br>
+ 			  <div class="recuadro_respuesta" id="resultado2"></div>  
+
+			</div>
+
+    </form>-->
+
+                <!--/ appointment -->
+
+
+
+
+
+
+
+                <!-- appointment -->
+                <div class="grid-col grid-col-3">
+                    <!-- appointment -->
+
+                </div>
+
+
+
+            </div>
+
+
+            </div>
+
+        </main>
+
+
+
+
+
+
+
+
+
+
+        <div id="pie_de_pagina"></div>
+
+
+        <script>
+            cargar_pie();
+
+            document.getElementById("pie_de_pagina").innerHTML = localStorage.pie_de_pagina;
+        </script>
+
+
+
+
+
+        <!-- scripts -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+        <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+        <script type="text/javascript" src="js/greensock.js"></script>
+        <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+        <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+        <!-- Superscrollorama -->
+        <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+        <script type="text/javascript" src="js/TweenMax.min.js"></script>
+        <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+        <!--/ Superscrollorama -->
+
+        <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+        <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+        <script type="text/javascript" src="js/jquery.tweet.js"></script>
+        <!-- EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+        <!--/ EASYPIECHART -->
+        <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+        <script type="text/javascript" src="js/scripts.js"></script>
+        <!--/ scripts -->
+
+
+
+
+        <!-- tuner -->
+        <script src="tuner/js/scripts.js"></script>
+
+        <div id="tuner" class="tuner"></div>
+        <!--/ tuner -->
+
+        <script>
+            cargar_horario();
+
+            document.getElementById("tuner").innerHTML = localStorage.horario;
+        </script>
+
+    </body>
+
+    </html>

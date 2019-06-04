@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<?PHP
+header('Acces-Control-Allow-Origin: *');
+?>
+<html>
+	<head>
+		<title>ACLIN::Laboratorio Clínico</title>
+		
+		<!-- metas -->
+		<meta charset="utf-8">
+		<meta name="author" content="ACLIN::Laboratorio Clínico">
+		<meta name="keywords" content="ACLIN. Laboratorio Clínico">
+		<meta name="description" content="ACLIN::Laboratorio Clínico::">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<!--/ metas -->
+		
+		<!-- styles -->
+		<link rel="stylesheet" type="text/css" href="css/layerslider.css">
+		<link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+<link rel="shortcut icon" href="img/favicon.png" />
+
+		<link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+		
+		<!--/ styles -->
+		
+		<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+
+			<script>
+		function examenes(){
+			var x = 'var'; //creamos un variable
+			var src = String( window.location.href ).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+		//document.getElementById("service4").innerHTML = "";
+			if( src == 1){document.getElementById("service1").click();} //genial enviar un click al ID service
+			if( src == 2){document.getElementById("service2").click();} //genial enviar un click al ID service
+			if( src == 3){document.getElementById("service3").click();} //genial enviar un click al ID service
+			if( src == 4){document.getElementById("service4").click();} //genial enviar un click al ID service
+			if( src == 5){document.getElementById("service5").click();} //genial enviar un click al ID service
+			if( src == 6){document.getElementById("service6").click();} //genial enviar un click al ID service
+			if( src == 7){document.getElementById("service7").click();} //genial enviar un click al ID service
+			if( src == 8){document.getElementById("service8").click();} //genial enviar un click al ID service
+			if( src == 9){document.getElementById("service9").click();} //genial enviar un click al ID service
+	}
+	</script>
+
+
+		<script>
+		function sucursales(){
+			var x = 'var'; //creamos un variable
+			var src = String( window.location.href ).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+		//document.getElementById("service4").innerHTML = "";
+			if( src == 1){document.getElementById("service1").click();} //genial enviar un click al ID service
+			if( src == 2){document.getElementById("service2").click();} //genial enviar un click al ID service
+			if( src == 3){document.getElementById("service3").click();} //genial enviar un click al ID service
+			if( src == 4){document.getElementById("service4").click();} //genial enviar un click al ID service
+			if( src == 5){document.getElementById("service5").click();} //genial enviar un click al ID service
+			if( src == 6){document.getElementById("service6").click();} //genial enviar un click al ID service
+			if( src == 7){document.getElementById("service7").click();} //genial enviar un click al ID service
+			if( src == 8){document.getElementById("service8").click();} //genial enviar un click al ID service
+			if( src == 9){document.getElementById("service9").click();} //genial enviar un click al ID service
+			if( src == 10){document.getElementById("service10").click();} //genial enviar un click al ID service
+			if( src == 11){document.getElementById("service11").click();} //genial enviar un click al ID service
+			if( src == 12){document.getElementById("service12").click();} //genial enviar un click al ID service
+			if( src == 13){document.getElementById("service13").click();} //genial enviar un click al ID service
+
+	}
+	</script>
+
+	<script> 
+function prehide(){ 
+if (document.getElementById){ 
+document.getElementById('preload').style.visibility='hidden'} 
+} 
+function preshow(){ 
+if (document.getElementById){ 
+document.getElementById('preload').style.visibility='visible'} 
+} 
+</script> 
+
+<script>
+function espere(){
+//setTimeout(function(){ alert("Un momentito..."); }, 3000);
+alert("Un momentito...");
+}
+</script>
+
+	</head>
+	
+	<body onload="sucursales()">
+
+		<div class="page">
+
+			<!-- page header -->
+			<header class="page-header main-page sticky">
+				<div class="sticky-wrapp">
+					<div class="sticky-container">
+						<!-- logo -->
+						<section id="logo" class="logo">
+							<div>
+								<a href="index.html"><img src="img/logos_1.svg" alt="ACLIN"></a>
+							</div>
+						</section>
+						<!--/ logo -->
+						
+<!-- main nav -->
+						<nav class="main-nav">
+							<ul>
+								<li>
+									<a href="index.html" class="active" align="center"><i class="fa fa-home"></i><br>INICIO</a>
+									<ul>
+										<li>
+											<a href="index.html">Ubicación</a>
+											<ul>
+												<li class="text">
+													<h2>Casa Matriz</h2>
+													<hr>
+													Tel. (56) 032 269 9605
+													<hr>
+													9 Norte 795 <br> Viña del Mar
+													<hr>
+													laboratorio@aclin.cl
+             <hr>
+													<a href="sucursales.html" class="more"><i class="fa fa-angle-double-right"></i></a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="sucursales.html" align="center"><i class="fa fa-street-view"></i><br>SUCURSALES</a>
+									<ul>	
+										<li><a href="sucursales.html?var=1">Viña del Mar - Casa Matriz</a></li>
+										<li><a href="sucursales.html?var=2">Viña del Mar - 1 Oriente 458</a></li>
+										<li><a href="sucursales.html?var=3">Viña del Mar - 14 Norte</a></li>
+										<li><a href="sucursales.html?var=4">Viña del Mar - Errázuriz 638</a></li>
+										<li><a href="sucursales.html?var=5">Viña del Mar - Llay Llay 1510</a></li>
+										<li><a href="sucursales.html?var=6">Reñaca</a></li>
+										<li><a href="sucursales.html?var=7">Quilpué</a></li>
+										<li><a href="sucursales.html?var=8">Villa Alemana</a></li>
+										<li><a href="sucursales.html?var=9">Limache</a></li>
+										<li><a href="sucursales.html?var=10">Valparaíso</a></li>
+										<li><a href="sucursales.html?var=11">Concón</a></li>
+										<li><a href="sucursales.html?var=12">Quillota</a></li>
+										<li><a href="sucursales.html?var=13">La Calera</a></li>
+									</ul>
+								</li>
+
+
+								<li>
+									<a href="examenes.html" align="center"><i class="fa fa-flask"></i><br>EXAMENES</a>
+									<ul>	
+										<li><a href="examenes.html?var=1">Química</a></li>
+										<li><a href="examenes.html?var=2">Hematología</a></li>
+										<li><a href="examenes.html?var=3">Hormonas</a></li>
+										<li><a href="examenes.html?var=4">Orinas</a></li>
+										<li><a href="examenes.html?var=5">Microbiología</a></li>
+										<li><a href="examenes.html?var=6">Inmunología</a></li>
+										<li><a href="examenes.html?var=7">Diagnóstico Molecular</a></li>
+										<li><a href="examenes.html?var=8">Cromatografía Líquida</a></li>
+										<li><a href="examenes.html?var=9">Otros</a></li>
+									</ul>
+								</li>
+								
+								
+								<li>
+									<a href="http://186.67.178.5:8083/Presentacion/loginpaciente.aspx" align="center"><i class="fa fa-file-text"></i><br>RESULTADOS</a>
+								</li>
+
+
+								<li>
+									<a href="http://164.77.130.91/ACLINCONVENIOS/login_Nuevo.asp" align="center"><i class="fa fa-user"></i><br>ACCESO A CONVENIOS</a>
+								</li>
+
+
+							</ul>
+					  </nav>
+						<!--/ main nav -->
+						
+						<!-- mobile nav -->
+						<nav id="mobile-main-nav" class="mobile-main-nav">
+							<i class="fa fa-bars"></i><a href="#" class="opener">ACLIN :: Menú</a>
+							<ul>
+								<li>
+									<a href="index.html" class="active" align="center"><i class="fa fa-home"></i>INICIO</a>
+									<ul>
+										<li>
+											<a href="index.html">Ubicación</a>
+											<ul>
+												<li class="text">
+													<h2>Casa Matriz</h2>
+													<hr>
+													Tel. (56) 032 269 9605
+													<hr>
+													9 Norte 795 <br> Viña del Mar
+													<hr>
+													laboratorio@aclin.cl
+             <hr>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+								<li>
+									<a href="sucursales.html" align="center"><i class="fa fa-street-view"></i>SUCURSALES</a>
+								</li>
+
+
+								<li>
+									<a href="examenes.html" align="center"><i class="fa fa-flask"></i>EXAMENES</a>
+									<ul>	
+										<li><a href="examenes.html?var=1">Química</a></li>
+										<li><a href="examenes.html?var=2">Hematología</a></li>
+										<li><a href="examenes.html?var=3">Hormonas</a></li>
+										<li><a href="examenes.html?var=4">Orinas</a></li>
+										<li><a href="examenes.html?var=5">Microbiología</a></li>
+										<li><a href="examenes.html?var=6">Inmunología</a></li>
+										<li><a href="examenes.html?var=7">Diagnóstico Molecular</a></li>
+										<li><a href="examenes.html?var=8">Cromatografía Líquida</a></li>
+										<li><a href="examenes.html?var=9">Otros</a></li>
+									</ul>
+								</li>
+								
+								
+								<li>
+									<a href="http://186.67.178.5:8083/Presentacion/loginpaciente.aspx" align="center"><i class="fa fa-file-text"></i>RESULTADOS</a>
+								</li>
+
+
+								<li>
+									<a href="http://164.77.130.91/ACLINCONVENIOS/login_Nuevo.asp" align="center"><i class="fa fa-user"></i>ACCESO A CONVENIOS</a>
+								</li>
+							</ul>
+						</nav>
+						<!--/ mobile nav -->
+					</div>
+				</div>
+			</header>
+			<!--/ page header -->
+			
+			<!-- quick search 
+			<form id="quick-search" class="quick-search">
+				<fieldset>
+					<legend>Búsqueda:</legend>
+					
+					<input type="text" placeholder="Búsqueda por nombre" id="docname" name="docname" class="ui-autocomplete-input" autocomplete="off">
+					
+					<select>
+						<option value="0">Especialidad</option>
+						<option value="1"> Anestesia </option>
+<option value="2"> Cardiología </option>
+<option value="3"> Cirugía </option>
+<option value="4"> Cirugía Pediátrica </option>
+
+<option value="6"> Diagnóstico por Imágenes </option>
+<option value="7"> Educacion Superior </option>
+<option value="8"> Enfermería </option>
+<option value="9"> Gastroenterología </option>
+<option value="10"> Ginecología Y Obstetricia </option>
+<option value="11"> Infectología </option>
+<option value="12"> Kinesiología </option>
+<option value="13"> Laboratorio Clínico </option>
+<option value="14"> Medicina Legal </option>
+<option value="15"> Medico Clínico </option>
+<option value="16"> Medico Familia </option>
+<option value="17"> Medico Laboral </option>
+<option value="18"> Nefrología </option>
+<option value="19"> Neurociencia </option>
+<option value="20"> Nutrición </option>
+<option value="21"> Odontología </option>
+<option value="22"> Oftalmología </option>
+<option value="23"> Oncología Clínica </option>
+<option value="24"> Ortesis y Prótesis </option>
+<option value="25"> Pediatría </option>
+<option value="26"> Radiología </option>
+<option value="27"> Reumatología </option>
+<option value="28"> Terapia Intensiva </option>
+<option value="29"> Trabajo Social </option>
+<option value="30"> Traumatología </option>
+<option value="31"> Urología </option>
+
+					</select>
+					
+					<select>
+						<option value="0">Consultorio</option>
+						<option value="1">Central</option>
+						<option value="2">Sede 1</option>
+						<option value="3">Sede 2</option>
+						
+					</select>
+					
+					<button type="submit">Buscar</button>
+					<div class="switcher">
+						<button id="quick-search-switcher" type="button">Mi Médico</button>
+					</div>
+				</fieldset>				
+			</form>
+			<!--/ quick search -->
+<!--/ HEADERS -->
+
+			<!-- page title -->
+			<section class="page-title">
+				<div class="grid-row clearfix">
+					<h1>ACLIN - Sucursales</h1>
+					
+					<nav class="bread-crumbs">
+						<a href="index.html">ACLIN</a>&nbsp;&nbsp;<i class="fa fa-angle-right"></i>&nbsp;
+						<a href="#">Sucursales</a>
+					</nav>
+				</div>
+			</section>
+			<!--/ page title -->
+
+			<main class="page-content">
+				<div class="grid-row">
+					<div class="grid-col grid-col-9">
+						<section class="detailed-services wpb_content_element">
+							<div class="widget-title"> Sucursales ACLIN</div>
+							<dl>
+	
+
+								<dt id="service1"><i class="fa fa-check"></i>Viña del Mar - Casa Matriz</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+
+											<ul>
+												<li>Atención:</li>
+												<li>9 Norte 795<br>(032) 269 9605</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 7:45 a 19:30 Hrs.<br>Sábado 8:30 a 13:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 7:45 a 16:30 Hrs.<br>Sábado 8:30 a 10:30 Hrs.</li>
+											</ul>
+
+											
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3345.5943890603157!2d-71.5486664!3d-33.014467599999996!2m3!1f0!2f0!
+
+3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689dde78a54043f
+
+%3A0x7ec416e3d867faa9!2sNueve+Nte.+795%2C+Vi%C3%B1a+del+Mar%2C
+
++V+Regi%C3%B3n!5e0!3m2!1ses!2scl!4v1432565001297" width="500" 
+
+height="500" frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+								<dt id="service2"><i class="fa fa-check"></i>Viña del Mar - 1 Oriente 458</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>1 Oriente 458<br>(032) 254 1478</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 7:45 a 13:30 Hrs. / 15:00 - 18:30.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 7:45 a 12:45 Hrs.<br>Sábado 8:30 a 10:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3345.4759173055745!2d-71.5492893!3d-33.01759!2m3!1f0!2f0!3f0!3m2!
+
+1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689dde75224e8c7%3A0x99d8b1d9ee920c62!2sUno+Ote+458%2C+Vi
+
+%C3%B1a+del+Mar%2C+V+Regi%C3%B3n!5e0!3m2!1ses!2scl!
+
+4v1432565170674" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+								<dt id="service3"><i class="fa fa-check"></i>Viña del Mar - 14 Norte</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>14 Norte 571 Primer Piso Of. 101<br>(032) 269 8806</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 7:45 a 14:30 Hrs. / 14:30 a 19:30<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 7:45 a 14:00 Hrs. / 14:30 a 16:30<br>Sábado 8:30 a 10:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3345.8029843182753!2d-71.5501087!3d-33.0089693!2m3!1f0!2f0!3f0!3m2!
+
+1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689dde9971821d7%3A0x60aa3958df107c02!2sCatorce+Nte+571%2C
+
++Vi%C3%B1a+del+Mar%2C+V+Regi%C3%B3n!5e0!3m2!1ses!2scl!
+
+4v1432565271807" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+								<dt id="service4"><i class="fa fa-check"></i>Viña del Mar - Errázuriz 638</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+													<ul>
+												<li>Atención:</li>
+												<li>Errázuriz 638<br>(032) 269 7964</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 7:45 a 12:30 Hrs. / 14:30 a 18:30 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 12:00 Hrs. / 14:30 a 16:30 Hrs.<br>Sábado 8:30 a 10:00 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3345.1070523128938!2d-71.55336199999999!3d-33.02731000000001!2m3!
+
+1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de0bcb0ccf6b
+
+%3A0xfa8a1e06df51b33e!
+
+2zRXJyw6F6dXJpeiA2MzgsIFZpw7FhIGRlbCBNYXIsIFYgUmVnacOzbg!5e0!
+
+3m2!1ses!2scl!4v1432565209592" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+								<dt id="service5"><i class="fa fa-check"></i>Viña del Mar - Llay Llay 1510</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+													<ul>
+												<li>Atención:</li>
+												<li>Llay Llay 1510<br>(032) 263 2585</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 13:00 Hrs. / 14:30 a 18:00 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 12:00 Hrs.<br>Sábado 8:30 a 10:00 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3345.1312743646035!2d-71.5417061!3d-33.026671799999995!2m3!1f0!2f0!
+
+3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689de76be3851c5%3A0xa678ad13af78ee23!2sLlay+Llay+1510%2C+Vi
+
+%C3%B1a+del+Mar%2C+V+Regi%C3%B3n!5e0!3m2!1ses!2scl!
+
+4v1432565329809" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+								
+  
+
+  								<dt id="service6"><i class="fa fa-check"></i>Reñaca - Av. Barros Arana 70</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+											<ul>
+												<li>Atención:</li>
+												<li>Av. Barros Arana 70<br>(032) 283 0911</li>
+												<li>Reñaca, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>7:45 a 13:00 Hrs. / 15:00 a 18:30 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 7:45 a 12:45 Hrs.<br>Sábado 8:30 a 10:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+											
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3347.1476630889297!2d-71.5373816!3d-32.9735058!2m3!1f0!2f0!3f0!3m2!
+
+1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689dd08b2d3de19%3A0xc0dbcdf00c4b3534!
+
+2zQmFycm9zIEFyYcOxYSA3MCwgVmnDsWEgZGVsIE1hciwgViBSZWdpw7Nu!
+
+5e0!3m2!1ses!2scl!4v1432565376141" width="500" height="500" 
+
+frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+								<dt id="service7"><i class="fa fa-check"></i>Quilpué - Benjamín Vicuña Mackenna 874</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+											<ul>
+												<li>Atención:</li>
+												<li>Calle Benjamín Vicuña Mackenna 874 Piso 1 Of. 108<br>(032) 254 1478</li>
+												<li>Viña del Mar, Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 12:30 Hrs. / 14:30 a 19:00 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 12:00 Hrs.<br>Sábado 8:30 a 9:45 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d209.02117319170586!2d-71.44462692699696!3d-33.04754692070007!2m3!
+
+1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689d91c5927bd85%3A0x32e65a71e6a4bc89!2sServicios+Medicos+y
+
++Odontologicos+Fas!5e0!3m2!1ses!2scl!4v1432565828440" width="500" 
+
+height="500" frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service8"><i class="fa fa-check"></i>Villa Alemana - Av. Valparaíso 645</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Av. Valparaíso 645, Villa Alemana L-2 Edificio I. Composto, Chile<br>(032) 253 4474</li>
+												<li>Villa Alemana - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 12:30 Hrs. / 15:00 a 19:00 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 12:00 Hrs.<br>Sábado 8:30 a 9:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!
+
+1d3344.47395133439!2d-71.372649!3d-33.043987!3m2!1i1024!2i768!4f13.1!
+
+3m3!1m2!1s0x9689d783124aef09%3A0xf801fa88fd448abf!2sCentro+Medico
+
++Italo+Composto+-+Avda+Valparaiso+645%2C+Valpara%C3%ADso%2C
+
++Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1432566153717" 
+
+width="500" height="500" frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service9"><i class="fa fa-check"></i>Limache - Urmeneta 496</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Urmeneta 496<br>(032) 233 3480</li>
+												<li>Limache - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:30 a 12:30 Hrs. / 14:30 a 19:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:30 a 11:00 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3346.6150978840187!2d-71.2703384!3d-32.987555300000004!2m3!1f0!2f0!
+
+3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689d40eb875807d
+
+%3A0x95af86a116df0600!2sUrmeneta+496%2C+Limache%2C+V+Regi
+
+%C3%B3n!5e0!3m2!1ses!2scl!4v1432566207710" width="500" height="500" 
+
+frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service10"><i class="fa fa-check"></i>Valparaíso - Av. Brasil 2128</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Av. Brasil 2128 (a metros de General Freire)<br>(032) 254 3458</li>
+												<li>Valparaíso - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 7:45 a 13:00 Hrs. / 15:00 a 18:30 Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 7:45 a 12:45 Hrs.<br>Sábado 8:30 a 10:00 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3344.4300675489617!2d-71.6139936!3d-33.0451427!2m3!1f0!2f0!3f0!3m2!
+
+1i1024!2i768!4f13.1!3m3!1m2!
+
+1s0x9689e0da03050297%3A0x4b01cc1c83348f68!2sBrasil+2128%2C
+
++Valpara%C3%ADso%2C+V+Regi%C3%B3n!5e0!3m2!1ses!2scl!
+
+4v1432566263887" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service11"><i class="fa fa-check"></i>Concón - Clarencia 896</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Clarencia 896<br>(032) 281 6450</li>
+												<li>Concón - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 13:00 Hrs.<br>Sábado 8:30 a 11:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 12:00 Hrs.<br>Sábado 8:30 a 10:00 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!
+
+1d3348.874639075162!2d-71.5174198!3d-32.9279102!3m2!1i1024!2i768!
+
+4f13.1!3m3!1m2!1s0x9689c32c141c7119%3A0x50773e10f91faf04!
+
+2zQ2xhcmVuY2lhLCBDb25jw7NuLCBWIFJlZ2nDs24!5e0!3m2!1ses!2scl!
+
+4v1432566319112" width="500" height="500" frameborder="0" 
+
+style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service12"><i class="fa fa-check"></i>Quillota - Pudeto 311</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Pudeto 311<br>(032) 233 3498</li>
+												<li>Quillota - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 13:00 Hrs. / 15:00 a 19:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 11:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+
+1d3350.6197884607377!2d-71.24707529999999!3d-32.8817778!2m3!1f0!2f0!
+
+3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689cd84ed80097d
+
+%3A0x64d9c7549f3d61c5!2sPudeto+311%2C+Quillota%2C+V+Regi%C3%B3n!
+
+5e0!3m2!1ses!2scl!4v1432566356597" width="500" height="500" 
+
+frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+								<dt id="service13"><i class="fa fa-check"></i>La Calera - Carrera 503</dt>
+								<dd>
+									<div class="details">
+										<div class="clearfix">
+											<img src="img/servicios/suc_vina.png" width="185" height="110" alt="">
+												<ul>
+												<li>Atención:</li>
+												<li>Carrera 503 Segundo Piso<br>(032) 233 5433 (032) 233 5432</li>
+												<li>Villa Alemana - Chile</li>
+											</ul>
+											<ul>
+												<li>Horario de Atención</li>
+												<li>Lunes a Viernes 8:00 a 13:00 Hrs. / 15:00 a 19:00 Hrs.</li>
+											</ul>
+											<ul>
+												<li>Horario de Toma de Muestra</li>
+												<li>Lunes a Viernes 8:00 a 10:30 Hrs.</li>
+											</ul>
+										</div>
+									</div>
+									<div class="row">
+										<!--
+										--><div class="col">
+											<ul>
+												
+												
+												<a href="#"><i class="fa fa-angle-right"></i>&nbsp;&nbsp;Dirección Sucursal</a></li>
+												
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354.1931953938342!2d-71.1897393!3d-32.78713630000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x968834ac59bfe01f%3A0x959407dc08ae4d0!2sCarrera+503%2C+Calera%2C+Regi%C3%B3n+de+Valpara%C3%ADso!5e0!3m2!1ses-419!2scl!4v1433262378854" width="600" height="450" frameborder="0" style="border:0"></iframe>
+											</ul>
+										</div><!--
+										-->
+									</div>
+								</dd>
+
+
+
+
+                               
+							</dl>
+						</section>
+						
+					</div>
+
+
+
+				</div>
+			</main>
+
+
+
+<!-- FOOTERS -->
+			<!-- page footer 
+			<footer class="page-footer">
+				<a href="#" id="top-link" class="top-link"><i class="fa fa-angle-double-up"></i></a>
+				
+				<div class="grid-row">
+					<div class="grid-col grid-col-3">
+						<!-- last news 
+						<section class="widget-alt last-news">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Clinico</div>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin justo non odio molestie, sed venenatis elit, consectetur adipiscing.</li>
+								<li>Donec quis condimentum leo, et congue dolor. Integer auctor facilisis odio. Duis vitae nibh tristique, consectetur lacus a, facilisis rutrum enim.</li>
+								<li>Cras fermentum interdum dapibus. Maecenas imperdiet, consectetur adipiscing magna nec odio cursus, vitae consequat ante.</li>
+							</ul>
+						</section>
+						<!--/ last news 
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- location
+						<section class="widget-alt location">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Ubicación</div>
+							<address>Dirección 1234 - Copiapó - 1530000, Chile</address>
+							<ul>
+								<li><i class="fa fa-phone"></i>(+56) 52 9 47677800</li>
+								<li><i class="fa fa-at">@</i>info@saludcadelaria.com</li>
+								<li><i class="fa fa-skype"></i>La Candelaria Salud</li>
+							</ul>
+							<nav>
+								
+								<a href="#" class="fa fa-facebook"></a>
+								
+							</nav>
+						</section>
+						<!--/ location 	
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- last news 
+						<section class="widget-alt recent-posts">
+							<div class="widget-icon"></div>
+							<div class="widget-title">Recent Posts</div>
+							<ul>
+								<li>
+									<a href="#"><img src="pic/post/1.png" width="80" height="80" alt=""></a>
+									<p><a href="#">New study links lutein with eye health benefits, consectetur adipiscing</a><br>5 months ago</p>
+								</li>
+								<li>
+									<a href="#"><img src="pic/post/2.png" width="80" height="80" alt=""></a>
+									<p><a href="#">Pets may reduce risk of heart disease, et congue dolor heart</a><br>8 months ago</p>
+								</li>
+								<li>
+									<a href="#"><img src="pic/post/3.png" width="80" height="80" alt=""></a>
+									<p><a href="#">Discoveries offer a new explanation for diabetes, consectetur</a><br>10 months ago</p>
+								</li>
+							</ul>
+						</section>
+						<!--/ last news					
+					</div>
+					
+					<div class="grid-col grid-col-3">
+						<!-- work time
+						<section class="widget-alt work-time">
+							<div class="widget-icon"></div>
+							<dl>
+								<dt>Lun</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Mar</dt>
+								<dd>01:00 am - 7:00 pm</dd>
+								<dt>Mié</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Jue</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Vie</dt>
+								<dd>08:00 am - 7:00 pm</dd>
+								<dt>Sáb</dt>
+								<dd>08:00 am - 5:00 pm</dd>
+								<dt>Dom</dt>
+								<dd>08:00 am - 5:00 pm</dd>
+							</dl>
+							<a href="contacto.html" class="button">Consulte ahora</a>
+						</section>
+						<!--/ work time 						
+					</div>
+				</div>
+			</footer>
+			<!--/ page footer -->
+
+
+
+
+								<div class="grid-col grid-col-3">						
+						<!-- contacts -->
+						<section class="widget widget-contacts">
+							<div class="widget-title">Info Contacto</div>
+							<dl>
+								<dt class="opened">Centro de Salud</dt>
+								<dd>
+									<ul>
+										<li><i class="fa fa-map-marker"></i>Av. Henriquez 386, Copiapó</li>
+										<li><i class="fa fa-phone"></i>(052) 2360672</li>
+										<li><i class="fa fa-envelope"></i>info@saludcandelaria.com</li>
+									</ul>
+								</dd>
+								<dt>Recursos Humanos</dt>
+								<dd>
+									<ul>
+										<li><i class="fa fa-map-marker"></i>Vanessa Arrieta</li>
+										<li><i class="fa fa-phone"></i>(052) 2360672</li>
+										<li><i class="fa fa-envelope"></i>varrieta@saludcandelaria.com</li>
+									</ul>
+								</dd>
+								
+							</dl>
+						</section>
+						<!--/ contacts -->
+						
+						<!-- follow --
+						<section class="widget widget-follow">
+							<ul>
+								<li><a href="#"><i class="fa fa-rss"></i>150<br>Subscribers</a></li>
+								<li><a href="#"><i class="fa fa-facebook"></i>5560<br>Fans</a></li>
+								<li><a href="#"><i class="fa fa-twitter"></i>2300<br>Followers</a></li>
+							</ul>
+						</section>
+						<!--/ follow --> 
+					</div>
+
+
+
+
+
+
+			
+			
+			<!-- copyrights -->
+			<div class="copyrights">:: Laboratorio Clínico Ancud :: Aníbal Pinto Nº 308 - Esq. Pedro Montt :: Fono/Fax: 065-623017 - 065-623096 :: Ancud - Región de Los Lagos - Chile ::</div>
+			<!--/ copyrights -->
+
+		</div>
+		
+		<!-- scripts -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+		<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+		<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+		<script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+		<script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+		<script type="text/javascript" src="js/greensock.js"></script>
+		<script type="text/javascript" src="js/layerslider.transitions.js"></script>
+		<script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+	<!-- Superscrollorama -->		
+		<script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+		<script type="text/javascript" src="js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="js/TimelineMax.min.js"></script>
+	<!--/ Superscrollorama -->
+	
+		<script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+		<script type="text/javascript" src="js/jquery.tweet.js"></script>
+	<!-- EASYPIECHART -->
+		<script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+	<!--/ EASYPIECHART -->
+		<script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+		<script type="text/javascript" src="js/scripts.js"></script>
+		<!--/ scripts -->
+		
+	</body>
+</html>

@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>ALPACK</title>
+
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="ALPACK">
+    <meta name="keywords" content="Centro Médico, Laboratorio Clínico, Frilab">
+    <meta name="description" content="ALPACK">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <!--/ metas -->
+
+    <!-- styles -->
+    <link rel="stylesheet" type="text/css" href="css/layerslider.css">
+    <link rel="stylesheet" type="text/css" href="css/fullwidth/skin.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/color-cyan.css">
+    <link rel="shortcut icon" href="img/favicon.png" />
+
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
+
+    <!--/ styles -->
+
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+
+    <script>
+        function envio_examenes() {
+
+            window.location = ("examenes.html?var=1");
+            //document.getElementById("service4").click(); //genial enviar un click al ID service4
+
+            //setTimeout(function(){ window.location = ("examenes.html");  }, 1000);
+
+            //setTimeout(function(){ document.getElementById("service4").click(); }, 2500);
+
+        }
+    </script>
+
+
+    <script>
+        function laboratorio() {
+            var x = 'var'; //creamos un variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+            } //genial enviar un click al ID service
+            if (src == 10) {
+                document.getElementById("service10").click();
+            } //genial enviar un click al ID service
+            if (src == 11) {
+                document.getElementById("service11").click();
+            } //genial enviar un click al ID service
+            if (src == 12) {
+                document.getElementById("service12").click();
+            } //genial enviar un click al ID service
+            if (src == 13) {
+                document.getElementById("service13").click();
+            } //genial enviar un click al ID service
+        }
+    </script>
+
+
+    <script>
+        function sucursales() {
+            var x = 'var'; //creamos un variable
+            var src = String(window.location.href).split('=')[1]; //extrae el valor seleccionado en el menu desde index u otro lado. todo lo que esta despues del =
+            //document.getElementById("service4").innerHTML = "";
+            if (src == 1) {
+                document.getElementById("service1").click();
+            } //genial enviar un click al ID service
+            if (src == 2) {
+                document.getElementById("service2").click();
+            } //genial enviar un click al ID service
+            if (src == 3) {
+                document.getElementById("service3").click();
+            } //genial enviar un click al ID service
+            if (src == 4) {
+                document.getElementById("service4").click();
+            } //genial enviar un click al ID service
+            if (src == 5) {
+                document.getElementById("service5").click();
+            } //genial enviar un click al ID service
+            if (src == 6) {
+                document.getElementById("service6").click();
+            } //genial enviar un click al ID service
+            if (src == 7) {
+                document.getElementById("service7").click();
+            } //genial enviar un click al ID service
+            if (src == 8) {
+                document.getElementById("service8").click();
+            } //genial enviar un click al ID service
+            if (src == 9) {
+                document.getElementById("service9").click();
+            } //genial enviar un click al ID service
+            if (src == 10) {
+                document.getElementById("service10").click();
+            } //genial enviar un click al ID service
+            if (src == 11) {
+                document.getElementById("service11").click();
+            } //genial enviar un click al ID service
+            if (src == 12) {
+                document.getElementById("service12").click();
+            } //genial enviar un click al ID service
+            if (src == 13) {
+                document.getElementById("service13").click();
+            } //genial enviar un click al ID service
+
+        }
+    </script>
+
+
+    <style>
+        .fondo {
+            background: url(img/fondo4.jpg);
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+
+    <!-- menu inicio -->
+
+    <!-- page header -->
+    <header id="menu_original" class="page-header main-page sticky ocultar">
+
+
+        <div class="sticky-wrapp">
+            <div class="sticky-container">
+                <!-- aquui cambiar fondo con    fondo-->
+                <!-- logo -->
+                <section class="logo" id="logo" name="logo">
+                    <div>
+                        <a href="index.html"><img src="img/logos_1.png" alt="entro Médico y Laboratorio Clínico Frilab"></a>
+
+                    </div>
+                </section>
+                <!--/ logo -->
+
+                <!-- main nav -->
+                <nav class="main-nav">
+
+                    <ul>
+                        <li>
+                            <a href="index.html" class="active" align="center"><i class="fa fa-home"></i><br>INICIO</a>
+                            <ul>
+
+                                <li class="text">
+                                    <h3><b>ALPACK</b></h3>
+                                    Lunes a Viernes
+                                    <br> 9:00 a 13:00 hrs.
+                                    <br> 14:00 a 19:00 hrs.
+                                    <br> Sábado
+                                    <br> 9:00 a 13:00 hrs.<br>
+                                    <br>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="preguntas.html" align="center"><i class="fa fa-question-circle"></i><br>PREGUNTAS</a>
+                            <ul>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="sucursales.html?var=1" align="center"><i class="fa fa-street-view"></i><br>UBICACIÓN</a>
+
+                        </li>
+
+
+
+                        <li>
+                            <a href="quienessomos.html" align="center"><i class="fa fa-question-circle"></i><br>EMPRESA</a>
+                            <ul>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="servcicios.html" align="center"><i class="fa fa-question-circle"></i><br>SERVICIOS</a>
+                            <ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="noticias.html" align="center"><i class="fa fa-question-circle"></i><br>NOTICIAS</a>
+                            <ul>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contacto.html" align="center"><i class="fa fa-question-circle"></i><br>CONTACTO</a>
+                            <ul>
+                            </ul>
+                        </li>
+
+
+
+
+
+                    </ul>
+                </nav>
+                <!--/ main nav -->
+
+
+                <!-- mobile nav -->
+                <nav id="mobile-main-nav" class="mobile-main-nav">
+                    <i class="fa fa-bars"></i><a href="#" class="opener">LABORATORIO ANCUD :: Menú</a>
+                    <ul>
+
+
+                        <li>
+                            <a href="index.html" class="active" align="center"><i class="fa fa-home"></i><br>INICIO</a>
+                            <ul>
+
+                                <li class="text">
+                                    <h3><b>ALPACK</b></h3>
+                                    Lunes a Viernes
+                                    <br> 9:00 a 13:00 hrs.
+                                    <br> 14:00 a 19:00 hrs.
+                                    <br> Sábado
+                                    <br> 9:00 a 13:00 hrs.<br>
+                                    <br>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="preguntas.html" align="center"><i class="fa fa-question-circle"></i><br>PREGUNTAS</a>
+                        </li>
+
+
+                        <li>
+                            <a href="sucursales.html?var=1" align="center"><i class="fa fa-street-view"></i><br>UBICACIÓN</a>
+
+                        </li>
+
+
+
+                        <li>
+                            <a href="quienessomos.html" align="center"><i class="fa fa-question-circle"></i><br>EMPRESA</a>
+
+                        </li>
+
+                        <li>
+                            <a href="servcicios.html" align="center"><i class="fa fa-question-circle"></i><br>SERVICIOS</a>
+
+                        </li>
+                        <li>
+                            <a href="noticias.html" align="center"><i class="fa fa-question-circle"></i><br>NOTICIAS</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" align="center"><i class="fa fa-question-circle"></i><br>CONTACTO</a>
+                        </li>
+
+                    </ul>
+                </nav>
+                <!--/ mobile nav -->
+            </div>
+
+
+
+
+
+        </div>
+
+    </header>
+
+    <!--/ quick search -->
+
+    <button class="button succes" onclick="cargar_menu();">Mostrar Código - pegar codigo en: js/menu.js</button>
+    <textarea id="codigo_menu" rows="10" cols="20" wrap="soft">Texto que aparece ya escrito de antemano</textarea>
+
+
+
+
+
+    <script>
+        localStorage.menu = document.getElementById("menu_original").innerHTML;
+        //alert(localStorage.menu)
+    </script>
+
+
+
+
+    <script>
+        function cargar_menu() {
+
+            //var x = '<div class="sticky-wrapp"> <div class="sticky-container"> <!-- aquui cambiar fondo con fondo--> <!-- logo --> <section class="logo" id="logo" name="logo"> <div> <a href="index.html"><img src="img/logos_1.svg" alt="ANCUD Laboratorio Clínico"></a> </div> </section> <!--/ logo --> <!-- main nav --> <nav class="main-nav"> <ul> <li> <a href="index.html" class="active" align="center"><i class="fa fa-home"></i><br>INICIO</a> <ul> <li> <a href="index.html">Ubicación</a> <ul> <li class="text"> <h2>Información</h2> <hr> Tels. (065)-623017 <hr> (065)-623096 <hr> Aníbal Pinto Nº 308 <hr> Ancud - Chile <hr> info@laboratorioancud.cl <hr> <a href="sucursales.html" class="more"><i class="fa fa-angle-double-right"></i></a> </li> </ul> </li> </ul> </li> <li> <a href="preguntas.html" align="center"><i class="fa fa-question-circle"></i><br>PREGUNTAS</a> <ul>	</ul> </li> <li> <a href="sucursales.html" align="center"><i class="fa fa-street-view"></i><br>UBICACIÓN</a> <ul>	<li><a href="sucursales.html?var=1">Aníbal Pinto Nº 308</a></li> </ul> </li> <li> <a href="examenes.html" align="center"><i class="fa fa-flask"></i><br>LABORATORIO</a> <ul>	<li><a href="examenes.html?var=1">Exámenes Hematológicos</a></li> <li><a href="examenes.html?var=2">Exámenes Bioquimicos</a></li> <li><a href="examenes.html?var=3">Exámenes Hormonales</a></li> <li><a href="examenes.html?var=4">Exámenes Inmunológicos</a></li> <li><a href="examenes.html?var=5">Exámenes Microbiológicos</a></li> <li><a href="examenes.html?var=6">Exámenes Parasitológicos</a></li> <li><a href="examenes.html?var=7">Exámenes Genéticos</a></li> <li><a href="examenes.html?var=8">Exámenes de Biología Molecular</a></li> <li><a href="examenes.html?var=9">Toma de muestras a domicilio</a></li> <li><a href="examenes.html?var=10">Exámenes de Paternidad</a></li> <li><a href="examenes.html?var=11">Test Cutáneos</a></li> <li><a href="examenes.html?var=12">Electrocardiogramas</a></li> <li><a href="examenes.html?var=13">Niveles de Drogas</a></li> </ul> </li> <li> <a href="centro_medico.html" align="center"><i class="fa fa-stethoscope"></i><br>CENTRO MEDICO</a> <ul>	<li><a href="centro_medico.html?var=1">Medicina General</a></li> <li><a href="centro_medico.html?var=2">Ginecología</a></li> <li><a href="centro_medico.html?var=3">Neurología</a></li> <li><a href="centro_medico.html?var=4">Neurología Infantil</a></li> <li><a href="centro_medico.html?var=5">Otorrinolaringologo</a></li> <li><a href="centro_medico.html?var=6">Cirugía</a></li> <li><a href="centro_medico.html?var=7">Traumatología</a></li> <li><a href="centro_medico.html?var=8">Control de Niño Sano</a></li> <li><a href="centro_medico.html?var=9">Matrona Control Embarazo</a></li> <li><a href="centro_medico.html?var=10">Vacunatorio</a></li> <li><a href="centro_medico.html?var=11">Kinesiología</a></li> <li><a href="centro_medico.html?var=12">Psicología</a></li> <li><a href="centro_medico.html?var=13">Nutricionista</a></li> <li><a href="centro_medico.html?var=14">Fonoaudiología</a></li> <li><a href="centro_medico.html?var=15">Podología</a></li> </ul> </li> <li> <a href="http://186.67.178.5:8083/Presentacion/loginpaciente.aspx" align="center"><i class="fa fa-file-text"></i><br>RESULTADOS</a> </li> </ul> </nav> <!--/ main nav --> <!-- mobile nav --> <nav id="mobile-main-nav" class="mobile-main-nav"> <i class="fa fa-bars"></i><a href="#" class="opener">LABORATORIO ANCUD :: Menú</a> <ul> <li> <a href="index.html" class="active" align="center"><i class="fa fa-home"></i>INICIO</a> </li> <ul style="display: block;"> <li> <i></i><a href="preguntas.html" align="center">PREGUNTAS</a> <ul> <li class="text"> </li> </ul> </li> </ul> <li> <a href="sucursales.html" align="center"><i class="fa fa-flask"></i>UBICACION</a> </li> <ul style="display: block;"> <li> <i></i><a href="index.html" align="center">LABORATORIO</a> <ul> <li class="text"> </li><li><a href="examenes.html?var=1">Exámenes Hematológicos</a></li> <li><a href="examenes.html?var=2">Exámenes Bioquimicos</a></li> <li><a href="examenes.html?var=3">Exámenes Hormonales</a></li> <li><a href="examenes.html?var=4">Exámenes Inmunológicos</a></li> <li><a href="examenes.html?var=5">Exámenes Microbiológicos</a></li> <li><a href="examenes.html?var=6">Exámenes Parasitológicos</a></li> <li><a href="examenes.html?var=7">Exámenes Genéticos</a></li> <li><a href="examenes.html?var=8">Exámenes de Biología Molecular</a></li> <li><a href="examenes.html?var=9">Toma de muestras a domicilio</a></li> <li><a href="examenes.html?var=10">Exámenes de Paternidad</a></li> <li><a href="examenes.html?var=11">Test Cutáneos</a></li> <li><a href="examenes.html?var=12">Electrocardiogramas</a></li> <li><a href="examenes.html?var=13">Niveles de Drogas</a></li> </ul> </li> </ul> <ul style="display: block;"> <li> <i></i><a href="index.html" align="center">CENTRO MEDICO</a> <ul> <li class="text"> </li><li><a href="centro_medico.html?var=1">Medicina General</a></li> <li><a href="centro_medico.html?var=2">Ginecología</a></li> <li><a href="centro_medico.html?var=3">Neurología</a></li> <li><a href="centro_medico.html?var=4">Neurología Infantil</a></li> <li><a href="centro_medico.html?var=5">Otorrinolaringologo</a></li> <li><a href="centro_medico.html?var=6">Cirugía</a></li> <li><a href="centro_medico.html?var=7">Traumatología</a></li> <li><a href="centro_medico.html?var=8">Control de Niño Sano</a></li> <li><a href="centro_medico.html?var=9">Matrona Control Embarazo</a></li> <li><a href="centro_medico.html?var=10">Vacunatorio</a></li> <li><a href="centro_medico.html?var=11">Kinesiología</a></li> <li><a href="centro_medico.html?var=12">Psicología</a></li> <li><a href="centro_medico.html?var=13">Nutricionista</a></li> <li><a href="centro_medico.html?var=14">Fonoaudiología</a></li> <li><a href="centro_medico.html?var=15">Podología</a></li> </ul> </li> </ul> </ul> </nav> <!--/ mobile nav --> </div> </div>';
+
+            var x = document.getElementById("menu_original").innerHTML;
+            var xx = x.split("\n").join("");
+            var xxx = xx.replace(/(^\s*)|(\s*$)/g, "");
+            alert(xxx);
+            document.getElementById("codigo_menu").value = xx;
+
+
+            return xx;
+
+        }
+    </script>
+
+
+
+
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.migrate.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-media.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.pie.js"></script>
+    <script type="text/javascript" src="js/jquery.flot.categories.js"></script>
+    <script type="text/javascript" src="js/greensock.js"></script>
+    <script type="text/javascript" src="js/layerslider.transitions.js"></script>
+    <script type="text/javascript" src="js/layerslider.kreaturamedia.jquery.js"></script>
+
+    <!-- Superscrollorama -->
+    <script type="text/javascript" src="js/jquery.superscrollorama.js"></script>
+    <script type="text/javascript" src="js/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/TimelineMax.min.js"></script>
+    <!--/ Superscrollorama -->
+
+    <script type="text/javascript" src="js/jquery.ui.core.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.widget.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.tabs.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-tabs-rotate.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.accordion.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tweet.js"></script>
+    <!-- EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.easypiechart.js"></script>
+    <!--/ EASYPIECHART -->
+    <script type="text/javascript" src="js/jquery.autocomplete.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+    <!--/ scripts -->
+
+</body>
+
+</html>
