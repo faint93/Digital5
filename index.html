@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="style.css">
     <link href="css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/digital5_puma.png" />
+
+   
 
     <!--Bootstrap Carousel-->
 
@@ -422,30 +424,49 @@
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 ">
                                     <div class="contact_form ">
-                                        <form action="contacto.php " method="POST ">
-                                            <div class="inputs wow slideInLeft ">
-                                                <input id="nombre " name="nombre " type="text "
-                                                    placeholder="Ingrese su nombre* " required="required " />
-                                                <input id="e-mail " name="e-mail " type="email "
-                                                    placeholder="Ingrese su E-mail * " required="required " />
-                                                <input id="celular " name="celular " type="text "
-                                                    placeholder="Ingrese su Teléfono* " required="required " />
+                                        <form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
+                                            <div class="row">
+                                              <div id="msgContactSubmit" class="hidden" style="color:white; font-size:30px;"></div>
+                                              <div class="inputs wow slideInLeft ">
+                                                <div class="form-group">
+                                                    
+                                                    <input name="fname" id="fname" placeholder="Nombre*" class="form-control" type="text" required data-error=""> 
+                                                    
+                                                  </div><!-- end form-group -->
+                                                  <div class="form-group">
+                                                    
+                                                    <input name="email" id="email" placeholder="E-mail*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="">
+                                                    
+                                                  </div><!-- end form-group -->
+                                                  <div class="form-group">
+                                                    
+                                                    <input name="phone" id="phone" placeholder="Teléfono*" class="form-control" type="text" required data-error="">
+                                                    
+                                                  </div><!-- end form-group -->
+                                                  <div class="form-group">
+                                                    
+                                                    <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="">
+                                                    
+                                                  </div><!-- end form-group -->
                                             </div>
                                             <div class="textarea_sec wow slideInRight ">
-                                                <textarea id="consulta" name="consulta" rows="5 "
-                                                    class="form-control" placeholder="Ingrese su Consulta * "
-                                                    required="required"></textarea>
+                                                <div class="form-group">
+                                                    
+                                                    <textarea rows="6" name="message" id="message" placeholder="Escribe tu mensaje aquí*" class="form-control" required data-error=""></textarea>
+                                                    
+                                                  </div><!-- end form-group -->
                                             </div>
                                             <br><br><br> <br><br><br> <br><br><br> <br><br><br>
-                                            <input type="text" id="rhh" name="rhh" class="form-control"
-                                                style="display:none; ">
-                                            <input type="text" id="rhhp" name="rhhp" class="form-control"
-                                                style="display:none;">
-                                            <div class="button_sec wow flash botonC ">
-                                                <input type="submit" id="submit" name="submit"
-                                                    class="contact_btn hvr-ripple-out " value="Enviar" />
-                                            </div>
-                                        </form>
+                                              
+                                              
+                                              <div class="button_sec wow flash botonC form-group last text-center" >
+                                                <button type="submit" id="submit" class="contact_btn hvr-ripple-out">Enviar</button>
+                                              </div><!-- end form-group -->	
+                                          
+                                              
+                                              <div class="clearfix"></div>
+                                            </div><!-- end row -->
+                                          </form><!-- end form -->
                                     </div>
                                 </div>
                             </div>
@@ -568,34 +589,10 @@
                     new WOW().init();
                 </script>
 
-
-
-
-                <script>
-                    window.RTCPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window
-                        .webkitRTCPeerConnection; //compatibility for firefox and chrome
-                    var pc = new RTCPeerConnection({
-                            iceServers: []
-                        }),
-                        noop = function () {};
-                    pc.createDataChannel(" ");
-                    pc.createOffer(pc.setLocalDescription.bind(pc), noop);
-                    pc.onicecandidate = function (ice) {
-                        if (!ice || !ice.candidate || !ice.candidate.candidate) return;
-                        document.getElementById("rhh ").value =
-                            /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/.exec(ice.candidate
-                                .candidate)[1];
-                        pc.onicecandidate = noop;
-                    };
-                </script>
-
-                <script type="application/javascript ">
-                    function getIP(json) {
-                        document.getElementById("rhhp ").value = json.ip;
-                    }
-                </script>
-                <script type="application/javascript " src="https://api.ipify.org?format=jsonp&callback=getIP ">
-                </script>
+<!-- Form Validator -->
+<script src="js/validator.min.js"></script>
+<!-- Contact Form Js -->
+<script src="js/contact-form.js"></script>
 
 </body>
 
