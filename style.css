@@ -1292,3 +1292,42 @@ img.mediana {
     src: local('Monoton'), local('Monoton-Regular'), url(http://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
   }
   
+
+
+  /*Equipo*/
+
+  @import url(https://fonts.googleapis.com/css?family=Raleway:400,900,700,600,500,300,200,100,800);
+
+.team h2 {
+    color: #4C4C4C;
+    word-spacing: 5px;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom:30px;
+}
+
+.ion-minus{
+    padding:0px 10px;
+}
+
+.team{
+	background-color:#f6f6f6;
+	padding:60px 0px;
+    
+}
+
+.team h4 {
+    color: #2352eb;
+}
+
+.team p{
+    padding-bottom:25px;
+}
+
+.team .fa{
+    color: #2352eb;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px;
+}
+
