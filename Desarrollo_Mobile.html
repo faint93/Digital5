@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="es-CL">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -18,9 +19,11 @@
     <link rel="stylesheet" href="style.css">
     <link href="css/hover-min.css" rel="stylesheet" media="all">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="img/digital5_puma.png" />
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="css/contact-form.css" type="text/css">
 </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Header and banner -->
@@ -61,65 +64,122 @@
     </nav>
 
     <div id="home" class="header_area">
-        <div class="container" >
+        <div class="container">
             <div class="row">
                 <div class="header_inner">
-                    <h3 class="wow fadeInDown"><img src="img/laptop.png" alt="" width="10%"> Desarrollo Mobile</h3>
-                    <p style="font-size:22px;color:#649aea;" class="wow fadeInDown" >Creamos aplicaciones mobiles de acuerdo a tu necesidad</p>
+                    <h3 class="wow fadeInDown"><img src="img/movile.png" alt="" width="10%"> Desarrollo Mobile</h3>
+                    <p style="font-size:22px;color:#649aea;" class="wow fadeInDown">Creamos aplicaciones mobiles de
+                        acuerdo a tu necesidad</p>
                     <br>
                     <!-- <h1 class="wow fadeInDown">DIGITAL 5</h1> -->
-                    <p style="font-size:22px;color:white;" class="wow fadeInDown">El desarrollo de aplicaciones móviles es el conjunto de procesos y procedimientos involucrados en la escritura de software para pequeños dispositivos inalámbricos de cómputo, como teléfonos inteligentes o tabletas.
+                    <p style="font-size:22px;color:white;" class="wow fadeInDown">El desarrollo de aplicaciones móviles
+                        es el conjunto de procesos y procedimientos involucrados en la escritura de software para
+                        pequeños dispositivos inalámbricos de cómputo, como teléfonos inteligentes o tabletas.
                     </p>
                     <br>
-                   <!--<a href="#contact" class="banner_btn hvr-ripple-out wow fadeInDown" data-toggle="modal" data-target="#exampleModal">Contacto</a>-->
-                   <h4 class="wow fadeInDown" style="font-size:22px;color:white;">Contacto</h4>
-                   <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 ">
-                    <div class="contact_form ">
-                        <form id="contactForm" name="contactform" data-toggle="validator" class="popup-form">
-                            <div class="row">
-                              <div id="msgContactSubmit" class="hidden" style="color:white; font-size:30px;"></div>
-                              <div class="inputs wow slideInLeft ">
-                                <div class="form-group">
-                                    
-                                    <input name="fname" id="fname" placeholder="Nombre*" class="form-control" type="text" required data-error=""> 
-                                    
-                                  </div><!-- end form-group -->
-                                  <div class="form-group">
-                                    
-                                    <input name="email" id="email" placeholder="E-mail*" pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email" required data-error="">
-                                    
-                                  </div><!-- end form-group -->
-                                  <div class="form-group">
-                                    
-                                    <input name="phone" id="phone" placeholder="Teléfono*" class="form-control" type="text" required data-error="">
-                                    
-                                  </div><!-- end form-group -->
-                                  <div class="form-group">
-                                    
-                                    <input name="subject" id="subject" placeholder="Asunto*" class="form-control" type="text" required data-error="">
-                                    
-                                  </div><!-- end form-group -->
+                    <!--<a href="#contact" class="banner_btn hvr-ripple-out wow fadeInDown" data-toggle="modal" data-target="#exampleModal">Contacto</a>-->
+                    <div class="container" style="padding-top: 10px; padding-bottom: 10px;">
+                        <div class="row">
+                            <div class="tab-content">
+                                <div class="col-sm-12">
+                                    <div class="item-wrap">
+                                        <div class="row">
+
+                                            <div class="col-sm-12">
+                                                <div class="item-content colBottomMargin">
+                                                    <div class="item-info global_title wow slideInDown">
+
+                                                        <h2 class="item-title text-center">Contacto</h2>
+
+                                                    </div>
+                                                    <!--End item-info -->
+
+                                                </div>
+                                                <!--End item-content -->
+                                            </div>
+                                            <!--End col -->
+                                            <div class="col-md-12">
+                                                <form id="contactForm" name="contactform" data-toggle="validator"
+                                                    class="popup-form">
+                                                    <div class="row">
+                                                        <div id="msgContactSubmit" class="hidden"></div>
+
+                                                        <div class="form-group col-sm-6">
+                                                            <div class="help-block with-errors"></div>
+                                                            <input name="fname" id="fname" placeholder="Tu nombre*"
+                                                                class="form-control" type="text" required
+                                                                data-error="Por favor ingresa tu nombre">
+                                                            <div class="input-group-icon"><i class="fa fa-user"></i>
+                                                            </div>
+                                                        </div><!-- end form-group -->
+                                                        <div class="form-group col-sm-6">
+                                                            <div class="help-block with-errors"></div>
+                                                            <input name="email" id="email" placeholder="Tu E-mail*"
+                                                                pattern=".*@\w{2,}\.\w{2,}" class="form-control"
+                                                                type="email" required
+                                                                data-error="Por favor ingresa un correo electrónico válido">
+                                                            <div class="input-group-icon"><i class="fa fa-envelope"></i>
+                                                            </div>
+                                                        </div><!-- end form-group -->
+                                                        <div class="form-group col-sm-6">
+                                                            <div class="help-block with-errors"></div>
+                                                            <input name="phone" id="phone" placeholder="Teléfono*"
+                                                                class="form-control" type="text" required
+                                                                data-error="Por favor ingresa tu número de teléfono">
+                                                            <div class="input-group-icon"><i class="fa fa-phone"></i>
+                                                            </div>
+                                                        </div><!-- end form-group -->
+                                                        <div class="form-group col-sm-6">
+                                                            <div class="help-block with-errors"></div>
+                                                            <input name="subject" id="subject" placeholder="Asunto*"
+                                                                class="form-control" type="text" required
+                                                                data-error="Por favor ingresa el asunto">
+                                                            <div class="input-group-icon"><i class="fa fa-book"></i>
+                                                            </div>
+                                                        </div><!-- end form-group -->
+                                                        <div class="form-group col-sm-12">
+                                                            <div class="help-block with-errors"></div>
+                                                            <textarea rows="3" name="message" id="message"
+                                                                placeholder="Escribe tu comentario aquí*"
+                                                                class="form-control" required
+                                                                data-error="Por favor ingresa un mensaje"></textarea>
+                                                            <div class="textarea input-group-icon"><i
+                                                                    class="fa fa-pencil"></i>
+                                                            </div>
+                                                        </div><!-- end form-group -->
+
+                                                        <div class="form-group last col-sm-12 text-center">
+                                                            <button type="submit" id="submit" class="btn btn-custom"><i
+                                                                    class='fa fa-envelope'></i> Enviar</button>
+                                                        </div><!-- end form-group -->
+
+
+                                                        <div class="clearfix"></div>
+                                                    </div><!-- end row -->
+                                                </form><!-- end form -->
+
+
+
+
+
+
+                                            </div>
+                                        </div>
+                                        <!--End row -->
+
+
+
+
+                                        <!-- Popup end -->
+
+                                    </div><!-- end item-wrap -->
+                                </div>
+                                <!--End col -->
                             </div>
-                            <div class="textarea_sec wow slideInRight ">
-                                <div class="form-group">
-                                    
-                                    <textarea rows="6" name="message" id="message" placeholder="Escribe tu mensaje aquí*" class="form-control" required data-error=""></textarea>
-                                    
-                                  </div><!-- end form-group -->
-                            </div>
-                            <br><br><br> <br><br><br> <br><br><br> <br><br><br>
-                              
-                              
-                              <div class="button_sec wow flash botonC form-group last text-center" >
-                                <button type="submit" id="submit" class="contact_btn hvr-ripple-out">Enviar</button>
-                              </div><!-- end form-group -->	
-                          
-                              
-                              <div class="clearfix"></div>
-                            </div><!-- end row -->
-                          </form><!-- end form -->
+                            <!--End tab-content -->
+                        </div>
+                        <!--End row -->
                     </div>
-                </div>
                 </div>
             </div>
         </div>
@@ -127,27 +187,28 @@
 
 
 
-        <!-- Linking scripts -->
-        <script src="js/vendor/jquery-1.12.0.min.js"></script>
-        <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script src="js/jquery.scrollUp.min.js"></script>
-        <script src="js/jquery.slicknav.min.js"></script>
-        <script src="js/jquery.easing.min.js"></script>
-        <script src="js/scrolling-nav.js"></script>
-        <script src="js/jquery.nav.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+    <!-- Linking scripts -->
+    <script src="js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery.nav.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
-        <script>
-            new WOW().init();
-        </script>
+    <script>
+        new WOW().init();
+    </script>
 
-                <!-- Form Validator -->
-                <script src="js/validator.min.js"></script>
-                <!-- Contact Form Js -->
-                <script src="js/contact-form.js"></script>
+    <!-- Form Validator -->
+    <script src="js/validator.min.js"></script>
+    <!-- Contact Form Js -->
+    <script src="js/contact-form.js"></script>
 
 </body>
+
 </html>

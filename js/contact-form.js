@@ -1,7 +1,7 @@
-document.addEventListener("touchstart", function() {}, false);
-(function($) {
+document.addEventListener("touchstart", function () {}, false);
+(function ($) {
     "use strict";
-    $(function() {
+    $(function () {
         var randNumber_1 = parseInt(Math.ceil(Math.random() * 15), 10);
         var randNumber_2 = parseInt(Math.ceil(Math.random() * 15), 10);
         humanCheckCaptcha(randNumber_1, randNumber_2);
@@ -12,8 +12,8 @@ document.addEventListener("touchstart", function() {}, false);
         $("#firstDigit").html('<input name="mathfirstnum" id="mathfirstnum" class="form-control" type="text" value="' + randNumber_1 + '" readonly>');
         $("#secondDigit").html('<input name="mathsecondnum" id="mathsecondnum" class="form-control" type="text" value="' + randNumber_2 + '" readonly>');
     }
-    $("#contactForm").validator().on("submit", function(event) {
-		var parametros =$(this).serialize();
+    $("#contactForm").validator().on("submit", function (event) {
+        var parametros = $(this).serialize();
         if (event.isDefaultPrevented()) {
             formError();
             submitContactFormActionMSG(false, "Por favor verifique el formulario e intentelo nuevamente");
@@ -35,7 +35,7 @@ document.addEventListener("touchstart", function() {}, false);
                     type: "POST",
                     url: "process.php",
                     data: parametros,
-                    success: function(text) {
+                    success: function (text) {
                         if (text == "success") {
                             contactFormSuccess();
                         } else {
@@ -45,7 +45,7 @@ document.addEventListener("touchstart", function() {}, false);
                     }
                 });
             } else {
-                submitContactFormActionMSG(false, "Por favor ingresa un número de teléfono valido");
+                submitContactFormActionMSG(false, "Por favor ingresa un número de teléfono");
                 return false;
             }
         }
@@ -66,9 +66,9 @@ document.addEventListener("touchstart", function() {}, false);
     }
 
 
-   
 
-    
+
+
 
     function formError() {
         $(".help-block.with-errors").removeClass('hidden');

@@ -316,6 +316,7 @@ a:focus {
 
 body {
     font-family: 'Open Sans', sans-serif;
+    
 }
 
 .popup-form select{background-color:white;display:inline-block;box-sizing:border-box;-webkit-appearance:none;-moz-appearance:none;background-image:linear-gradient(45deg, transparent 50%, #304f6f 50%),
@@ -363,12 +364,12 @@ body {
 /* Home Section Style*/
 
 .header_area {
-    background: url(img/headerback_2.png);
+    background-image: url(img/headerback_2.png);
     background-color: #005ca4;
     /*background-image: url(img/digital5_puma_transparente.png);*/
     background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: left;
+    background-size: cover;
+    background-position: center center;
     padding-top: 50px;
     text-align: center;
 }
@@ -522,6 +523,7 @@ body {
 .service_area {
     background: #fff;
     padding-bottom: 142px;
+    
 }
 
 
@@ -536,13 +538,13 @@ body {
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 700;
-    color: #222222;
+    color: #0B0B3B;
 }
 
 .global_title p {
     margin: 0;
     font-size: 16px;
-    color: #777777;
+    color: #0B0B3B;
     font-style: normal;
 }
 
@@ -576,7 +578,7 @@ body {
     margin-top: 25px;
     margin-bottom: 15px;
     font-size: 18px;
-    color: #222222;
+    color: #0B0B3B;
     font-weight: 700;
     text-transform: uppercase;
     -moz-transition: all .3s ease-in-out;
@@ -589,7 +591,7 @@ body {
 .service_inner p {
     margin: 0;
     font-size: 14px;
-    color: #777777;
+    color: #0B0B3B;
     padding: 0;
 }
 
@@ -720,7 +722,7 @@ body {
     padding: 0 5px;
     margin-top: 25px;
     font-size: 13px;
-    color: #777777;
+    color: #08068a;
 }
 
 .aboutus_inner img {
@@ -1312,8 +1314,16 @@ img.mediana {
 
 .team{
 	background-color:#f6f6f6;
-	padding:60px 0px;
+	padding:0px 0px;
     
+}
+
+.team h3 {
+    color: #0B0B3B;
+}
+
+.team p {
+    color: #0B0B3B;
 }
 
 .team h4 {

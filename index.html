@@ -23,6 +23,9 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="shortcut icon" href="img/digital5_puma.png" />
 
+    <link rel="stylesheet" href="css/contact-form.css" type="text/css">
+
+
 
 
     <!--Bootstrap Carousel-->
@@ -62,8 +65,10 @@
                             <li><a href="#servicios" class="page-scroll">Servicios</a></li>
                             <li><a href="#nosotros" class="page-scroll">Nosotros</a></li>
                             <li><a href="#team" class="page-scroll">Nuestro Equipo</a></li>
+                            <!--
                             <li><a href="#casos" class="page-scroll">Casos de Éxito</a></li>
                             <li><a href="#testimonios" class="page-scroll">Testimonios</a></li>
+                            -->
                             <li><a href="#contacto" class="page-scroll">Contacto</a></li>
                         </ul>
                     </div>
@@ -104,21 +109,21 @@
                 <div class="service_inner">
                     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="col-mm-3 wow fadeInLeft">
-                            <img src="img/basket.png" alt="">
+                            <img src="img/web.png" alt="">
                             <a href="Desarrollo_Web.html">
                                 <h4>Desarrollo Web</h4>
                             </a>
                             <p>Creamos tu sitio web a la medida</p>
                         </div>
                         <div class="col-mm-3 wow fadeInDown">
-                            <img src="img/laptop.png" alt="">
+                            <img src="img/movile.png" alt="">
                             <a href="Desarrollo_Mobile.html">
                                 <h4>Desarrollo Mobile</h4>
                             </a>
-                            <p>Creamos aplicaciones mobiles de acuerdo a tu necesidad</p>
+                            <p>Creamos aplicaciones moviles de acuerdo a tu necesidad</p>
                         </div>
                         <div class="col-mm-3 wow fadeInF">
-                            <img src="img/art.png" alt="">
+                            <img src="img/escritorio.png" alt="">
                             <a href="Sistemas.html">
                                 <h4>Sistemas</h4>
                             </a>
@@ -129,7 +134,7 @@
             </div>
         </div>
     </div>
-    <br>
+
 
 
 
@@ -225,7 +230,8 @@
                     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="global_title wow slideInDown">
                             <h1>Nosotros</h1>
-                            <p>Ofrecemos servicios informáticos, que resuelven los problemas de su empresa o
+                            <p>Ofrecemos servicios informáticos, que resuelven los problemas de
+                                su empresa o
                                 emprendimiento. Comprendemos las dificultades de los emprendedores, entendemos que los
                                 clientes necesitan un partner, un apoyo constante. Nuestra
                                 Empresa es un aliado que le ayudará a ofrecer mejores servicios y trabajar con la mejor
@@ -238,7 +244,7 @@
                     <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
                         <div class="aboutus_inner">
                             <img class="wow bounceInUp" src="img/about_banner.jpg" alt="" />
-                            <p class="wow slideInUp">
+                            <p class="wow slideInUp" style="color:#0B0B3B;">
                                 DIGITAL 5 Trabaja junto a sus clientes para resolver sus problemas.
                             </p>
                         </div>
@@ -247,7 +253,7 @@
             </div>
         </div>
     </div>
-    <br>
+
     <!-- Equipo de trabajo-->
 
     <div class="team" id="team">
@@ -255,9 +261,11 @@
 
             <div class="row">
                 <div class="col-lg-6 col-lg-offset-3 text-center">
-                    <h1><b><span class="ion-minus"></span>Equipo de Digital5<span class="ion-minus"></span></b></h1>
-                    <br>
-                    <br>
+                    <div class="global_title wow slideInDown">
+                        <h1><b>Equipo de Digital5</b></h1>
+                        <br>
+                        <br>
+                    </div>
                 </div>
             </div>
 
@@ -346,7 +354,8 @@
 
                         <h3>Equipo de Desarrollo - D5</h3>
 
-                        <p><a href="#" class="btn btn-primary">Nuestros Colaboradores</a></p>
+                        <p><button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#colaboradores">Nuestros Colaboradores</button></p>
 
                     </div>
 
@@ -374,12 +383,37 @@
 
             </div> <!-- row text-center -->
 
+            <!-- Modal -->
+            <div class="modal fade" id="colaboradores">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <h4 class="modal-title text-center">Nuestros colaboradores </h4>
+
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            Textototototo
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <!--Fin Equipo de trabajo-->
 
-    <!-- Casos de Éxito -->
+    <!-- Casos de Éxito
     <section id="fh5co-intro">
         <div class="container" id="casos">
             <div class="row row-bottom-padded-lg">
@@ -429,11 +463,9 @@
             </div>
         </div>
     </section>
+     Fin de Caso de Éxito -->
 
-
-    <!-- Fin de Caso de Éxito -->
-    <br><br><br>
-    <!-- Testimonios -->
+    <!-- Testimonios 
     <section id="fh5co-intro">
         <div class="container" id="testimonios">
             <div class="row row-bottom-padded-lg">
@@ -470,201 +502,229 @@
         </div>
     </section>
 
-    <!-- Fin de Testimonios -->
+     Fin de Testimonios -->
 
     <!-- Contact Us -->
-    <div id=" contacto" class="contact_us_area ">
-                    <div class="contact_us_area_inner ">
-                        <div class="container ">
-                            <div class="row ">
-                                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 ">
-                                    <div class="global_title wow slideInDown ">
-                                        <h1>Contacto</h1>
-                                    </div>
-                                </div>
-                            </div>
+    <section id="contacto" class="form-content-wrap">
+        <div class="container" style="padding-top: 70px; padding-bottom: 70px;">
+            <div class="row">
+                <div class="tab-content">
+                    <div class="col-sm-12">
+                        <div class="item-wrap">
                             <div class="row">
-                                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 ">
-                                    <div class="contact_form ">
-                                        <form id="contactForm" name="contactform" data-toggle="validator"
-                                            class="popup-form">
-                                            <div class="row">
-                                                <div id="msgContactSubmit" class="hidden"
-                                                    style="color:white; font-size:30px;"></div>
-                                                <div class="inputs wow slideInLeft ">
-                                                    <div class="form-group">
 
-                                                        <input name="fname" id="fname" placeholder="Nombre*"
-                                                            class="form-control" type="text" required data-error="">
+                                <div class="col-sm-12">
+                                    <div class="item-content colBottomMargin">
+                                        <div class="item-info global_title wow slideInDown">
 
-                                                    </div><!-- end form-group -->
-                                                    <div class="form-group">
+                                            <h2 class="item-title text-center">Contacto</h2>
 
-                                                        <input name="email" id="email" placeholder="E-mail*"
-                                                            pattern=".*@\w{2,}\.\w{2,}" class="form-control"
-                                                            type="email" required data-error="">
+                                        </div>
+                                        <!--End item-info -->
 
-                                                    </div><!-- end form-group -->
-                                                    <div class="form-group">
-
-                                                        <input name="phone" id="phone" placeholder="Teléfono*"
-                                                            class="form-control" type="text" required data-error="">
-
-                                                    </div><!-- end form-group -->
-                                                    <div class="form-group">
-
-                                                        <input name="subject" id="subject" placeholder="Asunto*"
-                                                            class="form-control" type="text" required data-error="">
-
-                                                    </div><!-- end form-group -->
-                                                </div>
-                                                <div class="textarea_sec wow slideInRight ">
-                                                    <div class="form-group">
-
-                                                        <textarea rows="6" name="message" id="message"
-                                                            placeholder="Escribe tu mensaje aquí*" class="form-control"
-                                                            required data-error=""></textarea>
-
-                                                    </div><!-- end form-group -->
-                                                </div>
-                                                <br><br><br> <br><br><br> <br><br><br> <br><br><br>
-
-
-                                                <div class="button_sec wow flash botonC form-group last text-center">
-                                                    <button type="submit" id="submit"
-                                                        class="contact_btn hvr-ripple-out">Enviar</button>
-                                                </div><!-- end form-group -->
-
-
-                                                <div class="clearfix"></div>
-                                            </div><!-- end row -->
-                                        </form><!-- end form -->
                                     </div>
+                                    <!--End item-content -->
+                                </div>
+                                <!--End col -->
+                                <div class="col-md-12">
+                                    <form id="contactForm" name="contactform" data-toggle="validator"
+                                        class="popup-form">
+                                        <div class="row">
+                                            <div id="msgContactSubmit" class="hidden"></div>
+
+                                            <div class="form-group col-sm-6">
+                                                <div class="help-block with-errors"></div>
+                                                <input name="fname" id="fname" placeholder="Tu nombre*"
+                                                    class="form-control" type="text" required
+                                                    data-error="Por favor ingresa tu nombre">
+                                                <div class="input-group-icon"><i class="fa fa-user"></i></div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group col-sm-6">
+                                                <div class="help-block with-errors"></div>
+                                                <input name="email" id="email" placeholder="Tu E-mail*"
+                                                    pattern=".*@\w{2,}\.\w{2,}" class="form-control" type="email"
+                                                    required
+                                                    data-error="Por favor ingresa un correo electrónico válido">
+                                                <div class="input-group-icon"><i class="fa fa-envelope"></i></div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group col-sm-6">
+                                                <div class="help-block with-errors"></div>
+                                                <input name="phone" id="phone" placeholder="Teléfono*"
+                                                    class="form-control" type="text" required
+                                                    data-error="Por favor ingresa tu número de teléfono">
+                                                <div class="input-group-icon"><i class="fa fa-phone"></i></div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group col-sm-6">
+                                                <div class="help-block with-errors"></div>
+                                                <input name="subject" id="subject" placeholder="Asunto*"
+                                                    class="form-control" type="text" required
+                                                    data-error="Por favor ingresa el asunto">
+                                                <div class="input-group-icon"><i class="fa fa-book"></i></div>
+                                            </div><!-- end form-group -->
+                                            <div class="form-group col-sm-12">
+                                                <div class="help-block with-errors"></div>
+                                                <textarea rows="3" name="message" id="message"
+                                                    placeholder="Escribe tu comentario aquí*" class="form-control"
+                                                    required data-error="Por favor ingresa un mensaje"></textarea>
+                                                <div class="textarea input-group-icon"><i class="fa fa-pencil"></i>
+                                                </div>
+                                            </div><!-- end form-group -->
+
+                                            <div class="form-group last col-sm-12 text-center">
+                                                <button type="submit" id="submit" class="btn btn-custom"><i
+                                                        class='fa fa-envelope'></i> Enviar</button>
+                                            </div><!-- end form-group -->
+
+
+                                            <div class="clearfix"></div>
+                                        </div><!-- end row -->
+                                    </form><!-- end form -->
+
+
+
+
+
+
                                 </div>
                             </div>
-                        </div>
+                            <!--End row -->
+
+
+
+
+                            <!-- Popup end -->
+
+                        </div><!-- end item-wrap -->
                     </div>
+                    <!--End col -->
                 </div>
-                <!--================Footer Area =================-->
+                <!--End tab-content -->
+            </div>
+            <!--End row -->
+        </div>
+        <!--End container -->
+    </section>
 
 
-                <footer>
 
-                    <div class="container-footer-all ">
+    <!--================Footer Area =================-->
 
-                        <div class="container-body ">
 
-                            <div class="colum3 text-justify ">
-                                <h1>Mas informacion de la compañia</h1>
+    <footer>
 
-                                <p>Ofrecemos servicios informáticos, que resuelven los problemas de su empresa o
-                                    emprendimiento. Comprendemos las dificultades de los emprendedores, entendemos que
-                                    los clientes necesitan un partner, un apoyo constante. Nuestra Empresa
-                                    es un aliado que le ayudará a ofrecer mejores servicios y trabajar con la mejor
-                                    tecnología.</p>
+        <div class="container-footer-all">
 
-                            </div>
+            <div class="container-body">
 
-                            <div class="colum3 ">
+                <div class="colum3 text-justify" style="color:#0B0B3B; padding-left:20px; padding-right:20px;">
+                    <h1>Mas informacion de la compañia</h1>
 
-                                <h1>Redes Sociales</h1>
+                    <p>Ofrecemos servicios informáticos, que resuelven los problemas de su empresa o
+                        emprendimiento. Comprendemos las dificultades de los emprendedores, entendemos que
+                        los clientes necesitan un partner, un apoyo constante. Nuestra Empresa
+                        es un aliado que le ayudará a ofrecer mejores servicios y trabajar con la mejor
+                        tecnología.</p>
 
-                                <div class="uno ">
-                                    <a target="_black "
-                                        href="https://www.facebook.com/October-Tech-820043538202403/ "><img
-                                            src="icon/facebook.png ">
-                                        <label>Siguenos en Facebook</label></a>
-                                </div>
-                                <!--<div class="uno ">
+                </div>
+
+                <div class="colum3" style="color:#0B0B3B; padding-left:20px; padding-right:20px;">
+
+                    <h1>Redes Sociales</h1>
+
+                    <div class="uno ">
+                        <a target="_blank " href="https://www.facebook.com/October-Tech-820043538202403/ "><img
+                                src="icon/facebook.png ">
+                            <label style="color:#0B0B3B;">Siguenos en Facebook</label></a>
+                    </div>
+                    <!--<div class="uno ">
                         <img src="icon/twitter.png ">
                         <label>Siguenos en Twitter</label>
                     </div>-->
-                                <div class="uno ">
-                                    <a href="# "><img src="icon/instagram.png ">
-                                        <label>Siguenos en Instagram</label></a>
-                                </div>
-                                <div class="uno ">
-                                    <a target="_black "
-                                        href="https://www.youtube.com/channel/UCx1NN2E-6uAZFQEBAiyF2cg "><img
-                                            src="icon/youtube.png ">
-                                        <label>Siguenos en Youtube</label></a>
+                    <div class="uno ">
+                        <a href="# "><img src="icon/instagram.png ">
+                            <label style="color:#0B0B3B;">Siguenos en Instagram</label></a>
+                    </div>
+                    <div class="uno ">
+                        <a target="_blank " href="https://www.youtube.com/channel/UCx1NN2E-6uAZFQEBAiyF2cg "><img
+                                src="icon/youtube.png ">
+                            <label style="color:#0B0B3B;">Siguenos en Youtube</label></a>
 
-                                </div>
-                                <!--<div class="uno ">
+                    </div>
+                    <!--<div class="uno ">
                         <img src="icon/pinterest.png ">
                         <label>Siguenos en Pinteres</label>
                     </div>-->
 
 
-                            </div>
+                </div>
 
-                            <div class="colum3 ">
+                <div class="colum3" style="color:#0B0B3B; padding-left:20px; padding-right:20px;">
 
-                                <h1>Informacion Contactos</h1>
+                    <h1>Informacion Contactos</h1>
 
-                                <div class="row2 ">
-                                    <img src="icon/house.png ">
-                                    <label>Manzanal,
-                                        Rancagua
-                                        La fraguita
-                                        #934</label>
-                                </div>
-
-                                <div class="row2 ">
-                                    <img src="icon/smartphone.png ">
-                                    <label>+56944994934</label>
-                                </div>
-
-                                <div class="row2 ">
-                                    <img src="icon/contact.png ">
-                                    <label>Alex.navarro@digital5.cl</label>
-                                </div>
-
-                            </div>
-
-                        </div>
-
+                    <div class="row2 ">
+                        <img src="icon/house.png ">
+                        <label>Manzanal,
+                            Rancagua
+                            La fraguita
+                            #934</label>
                     </div>
 
-                    <div class="container-footer ">
-                        <div class="footer ">
-                            <div class="copyright ">
-                                © 2019 Todos los Derechos Reservados | <a href=" ">Digital5</a>
-                            </div>
-
-                            <div class="information ">
-                                <a href=" ">Informacion Compañia</a> | <a href=" ">Privacion y Politica</a> | <a
-                                    href=" ">Terminos y Condiciones</a>
-                            </div>
-                        </div>
-
+                    <div class="row2 ">
+                        <img src="icon/smartphone.png ">
+                        <label>+56944994934</label>
                     </div>
 
-                </footer>
-                <!--================End Footer Area =================-->
+                    <div class="row2 ">
+                        <img src="icon/contact.png ">
+                        <label>Alex.navarro@digital5.cl</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer ">
+            <div class="footer ">
+                <div class="copyright ">
+                    © 2019 Todos los Derechos Reservados | <a href=" ">Digital5</a>
+                </div>
+
+                <div class="information ">
+                    <a href=" ">Informacion Compañia</a> | <a href=" ">Privacion y Politica</a> | <a href=" ">Terminos y
+                        Condiciones</a>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!--================End Footer Area =================-->
 
 
 
-                <!-- Linking scripts -->
-                <script src="js/vendor/jquery-1.12.0.min.js "></script>
-                <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js "></script>
-                <script src="js/plugins.js "></script>
-                <script src="js/main.js "></script>
-                <script src="js/wow.min.js "></script>
-                <script src="js/jquery.scrollUp.min.js "></script>
-                <script src="js/jquery.slicknav.min.js "></script>
-                <script src="js/jquery.easing.min.js "></script>
-                <script src="js/scrolling-nav.js "></script>
-                <script src="js/jquery.nav.js "></script>
-                <script src="js/bootstrap.min.js "></script>
-                <script>
-                    new WOW().init();
-                </script>
+    <!-- Linking scripts -->
+    <script src="js/vendor/jquery-1.12.0.min.js "></script>
+    <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js "></script>
+    <script src="js/plugins.js "></script>
+    <script src="js/main.js "></script>
+    <script src="js/wow.min.js "></script>
+    <script src="js/jquery.scrollUp.min.js "></script>
+    <script src="js/jquery.slicknav.min.js "></script>
+    <script src="js/jquery.easing.min.js "></script>
+    <script src="js/scrolling-nav.js "></script>
+    <script src="js/jquery.nav.js "></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script>
+        new WOW().init();
+    </script>
 
-                <!-- Form Validator -->
-                <script src="js/validator.min.js"></script>
-                <!-- Contact Form Js -->
-                <script src="js/contact-form.js"></script>
+    <!-- Form Validator -->
+    <script src="js/validator.min.js"></script>
+    <!-- Contact Form Js -->
+    <script src="js/contact-form.js"></script>
 
 </body>
 
